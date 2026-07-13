@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "yunnan-trip-v4-six-days";
+  const STORAGE_KEY = "yunnan-trip-v5-food-stays";
   const PACKING_KEY = "yunnan-packing-checked-v1";
   const $ = (selector) => document.querySelector(selector);
   const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -84,8 +84,8 @@
     const stay = day.stay ? `
       <article class="timeline-item" data-stay="true">
         <time class="time-label">夜宿</time><i class="timeline-dot" style="background:${day.color}"></i>
-        <div class="spot-card stay-card" data-action="navigate-stay">
-          <div><h3>⌂ ${escapeHtml(day.stay.name)}</h3><p>${escapeHtml(day.stay.address)}</p><div class="spot-meta"><span class="chip">住宿点</span><span class="chip">点此导航</span></div></div><span class="spot-arrow">↗</span>
+        <div class="spot-card stay-card" data-action="open-stay">
+          <div><h3>⌂ ${escapeHtml(day.stay.name)}</h3><p>${escapeHtml(day.stay.address)}</p><div class="spot-meta"><span class="chip">住宿建议</span><span class="chip">${day.stay.options?.length || 0} 个有依据的选择</span><span class="chip">查看预订提醒</span></div></div><span class="spot-arrow">→</span>
         </div>
       </article>` : "";
     $("#timeline").innerHTML = spots + stay + `
@@ -97,7 +97,7 @@
   function timelineCard(spot, index) {
     return `<article class="timeline-item" data-spot-id="${spot.id}">
       <time class="time-label">${escapeHtml(spot.time)}</time><i class="timeline-dot"></i>
-      <div class="spot-card">
+      <div class="spot-card ${isFoodSpot(spot) ? "food-card" : ""}">
         <div><h3>${String(index + 1).padStart(2, "0")} · ${escapeHtml(spot.name)}</h3><p>${escapeHtml(spot.description)}</p>
           <div class="spot-meta"><span class="chip">${escapeHtml(spot.type)}</span><span class="chip">${escapeHtml(spot.duration)}</span><span class="chip">${escapeHtml(spot.transport.split("；")[0])}</span></div>
         </div><span class="spot-arrow">→</span>
@@ -179,7 +179,7 @@
       if (day.stay && validCoords(day.stay)) {
         const stayMarker = L.marker([day.stay.lat, day.stay.lng], { icon: markerIcon("⌂", true, false), opacity: dayIndex === activeDayIndex ? 1 : .6 })
           .addTo(markerLayer).bindTooltip(`住宿 · ${day.stay.name}`, { direction: "top", offset: [0, -17] });
-        stayMarker.on("click", () => navigate(day.stay));
+        stayMarker.on("click", () => { activeDayIndex = dayIndex; openStay(); });
         allPoints.push([day.stay.lat, day.stay.lng]);
       }
     });
@@ -267,8 +267,8 @@
     $("#timeline").addEventListener("click", event => {
       const add = event.target.closest('[data-action="add-spot"]');
       if (add) return openSpotEditor(null);
-      const stay = event.target.closest('[data-action="navigate-stay"]');
-      if (stay) return navigate(trip.days[activeDayIndex].stay);
+      const stay = event.target.closest('[data-action="open-stay"]');
+      if (stay) return openStay();
       const item = event.target.closest("[data-spot-id]");
       if (item) openSpot(item.dataset.spotId);
     });
@@ -303,12 +303,16 @@
     const visibleIndex = visibleSpots(day).findIndex(item => item.id === spotId);
     if (!spot) return;
     activeSpotId = spotId;
+    const food = isFoodSpot(spot);
+    const sourceUrl = safeExternalUrl(spot.sourceUrl);
+    const evidenceSection = spot.evidence ? `<section class="drawer-section evidence-section"><h3>推荐依据</h3><p>${escapeHtml(spot.evidence)}</p>${sourceUrl ? `<a class="source-link" href="${escapeAttr(sourceUrl)}" target="_blank" rel="noopener">${escapeHtml(spot.sourceLabel || "查看推荐依据")} ↗</a>` : ""}</section>` : "";
     $("#drawerContent").innerHTML = `
       <header class="drawer-hero"><span class="drawer-index">STOP ${String(visibleIndex + 1).padStart(2,"0")} · ${escapeHtml(day.city)}</span><h2>${escapeHtml(spot.name)}</h2><p>${escapeHtml(spot.description)}</p><div class="spot-meta"><span class="chip">${escapeHtml(spot.time)}</span><span class="chip">${escapeHtml(spot.duration)}</span><span class="chip">${escapeHtml(spot.type)}</span></div></header>
       <section class="drawer-section"><h3>交通方式</h3><p>${escapeHtml(spot.transport)}</p></section>
-      <section class="drawer-section"><h3>建议游玩路线</h3><p>${escapeHtml(spot.route)}</p></section>
-      <section class="drawer-section"><h3>网红打卡机位</h3><ul>${spot.photoSpots.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
-      <section class="drawer-section"><h3>到访提醒</h3><ul>${spot.tips.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
+      <section class="drawer-section"><h3>${food ? "建议点单顺序" : "建议游玩路线"}</h3><p>${escapeHtml(spot.route)}</p></section>
+      <section class="drawer-section"><h3>${food ? "推荐菜与打卡点" : "网红打卡机位"}</h3><ul>${(spot.photoSpots || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
+      ${evidenceSection}
+      <section class="drawer-section"><h3>${food ? "预约与用餐提醒" : "到访提醒"}</h3><ul>${(spot.tips || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
       <div class="drawer-actions"><button class="btn secondary" id="editSpotBtn">编辑信息</button><a class="btn primary" href="${amapUrl(spot)}" target="_blank" rel="noopener">高德导航 ↗</a></div>`;
     $("#editSpotBtn").addEventListener("click", () => openSpotEditor(spotId));
     $("#detailDrawer").classList.add("open");
@@ -318,6 +322,34 @@
       map.flyTo([spot.lat, spot.lng], 14);
       markers.get(spotId).openTooltip();
     }
+  }
+
+  function openStay() {
+    const day = trip.days[activeDayIndex];
+    const stay = day?.stay;
+    if (!stay) return;
+    activeSpotId = null;
+    const options = (stay.options || []).map(option => {
+      const hotelUrl = safeExternalUrl(option.hotelUrl);
+      const evidenceUrl = safeExternalUrl(option.evidenceUrl);
+      return `<article class="stay-option">
+        <div class="stay-option-head"><span class="stay-option-tag">${escapeHtml(option.tag || "住宿候选")}</span><h3>${escapeHtml(option.name)}</h3></div>
+        <p><b>为什么推荐：</b>${escapeHtml(option.evidence || "")}</p>
+        <p><b>更适合：</b>${escapeHtml(option.fit || "")}</p>
+        <div class="stay-option-links">${hotelUrl ? `<a class="source-link" href="${escapeAttr(hotelUrl)}" target="_blank" rel="noopener">查看酒店 / 房型 ↗</a>` : ""}${evidenceUrl ? `<a class="source-link" href="${escapeAttr(evidenceUrl)}" target="_blank" rel="noopener">查看榜单依据 ↗</a>` : ""}</div>
+      </article>`;
+    }).join("");
+    $("#drawerContent").innerHTML = `
+      <header class="drawer-hero stay-hero"><span class="drawer-index">STAY · DAY ${String(activeDayIndex + 1).padStart(2,"0")}</span><h2>${escapeHtml(stay.name)}</h2><p>${escapeHtml(stay.address)}</p><div class="spot-meta"><span class="chip">${stay.options?.length || 0} 个住宿候选</span><span class="chip">已给预订核验项</span></div></header>
+      <section class="drawer-section"><h3>为什么住这里</h3><p>${escapeHtml(stay.why || stay.address)}</p></section>
+      <section class="drawer-section stay-options"><h3>有依据的住宿选择</h3>${options || "<p>还没有填写具体住宿候选。</p>"}</section>
+      <section class="drawer-section"><h3>下单前逐项确认</h3><ul>${(stay.booking || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
+      <div class="drawer-actions"><button class="btn secondary" id="editStayBtn">编辑当天</button><a class="btn primary" href="${amapUrl(stay)}" target="_blank" rel="noopener">导航到住宿区域 ↗</a></div>`;
+    $("#editStayBtn").addEventListener("click", () => { closeDrawer(); openDayEditor(); });
+    $("#detailDrawer").classList.add("open");
+    $("#detailDrawer").setAttribute("aria-hidden", "false");
+    $("#drawerBackdrop").classList.add("open");
+    if (map && validCoords(stay)) map.flyTo([stay.lat, stay.lng], 14);
   }
 
   function closeDrawer() {
@@ -385,10 +417,12 @@
     } else if (editorContext.type === "day") {
       const day = trip.days[editorContext.dayIndex];
       Object.assign(day, { city: values.city, title: values.title, summary: values.summary, transport: values.transport, distance: values.distance });
-      day.stay = { name: values.stayName, address: values.stayAddress, lat: Number(values.stayLat), lng: Number(values.stayLng) };
+      day.stay = { ...(day.stay || {}), name: values.stayName, address: values.stayAddress, lat: Number(values.stayLat), lng: Number(values.stayLng) };
     } else if (editorContext.type === "spot") {
       const day = trip.days[editorContext.dayIndex];
+      const existingSpot = editorContext.spotIndex >= 0 ? day.spots[editorContext.spotIndex] : {};
       const spot = {
+        ...existingSpot,
         id: editorContext.spotIndex >= 0 ? day.spots[editorContext.spotIndex].id : `${slugify(values.name)}-${Date.now().toString(36)}`,
         name: values.name, type: values.type, time: values.time, duration: values.duration,
         lat: Number(values.lat), lng: Number(values.lng), description: values.description,
@@ -473,6 +507,14 @@
 
   function navigate(place) { window.open(amapUrl(place), "_blank", "noopener"); }
   function amapUrl(place) { return `https://uri.amap.com/navigation?to=${place.lng},${place.lat},${encodeURIComponent(place.name)}&mode=car&policy=1&src=yunnan-trip&coordinate=wgs84&callnative=1`; }
+  function isFoodSpot(spot) { return /餐|火锅|米线|小吃|老店|必吃|早餐|午餐|晚餐/.test(String(spot?.type || "")); }
+  function safeExternalUrl(value) {
+    if (!value) return "";
+    try {
+      const url = new URL(value, location.href);
+      return ["http:", "https:"].includes(url.protocol) ? url.href : "";
+    } catch (error) { return ""; }
+  }
   function validCoords(item) { return item && Number.isFinite(Number(item.lat)) && Number.isFinite(Number(item.lng)) && Number(item.lat) !== 0 && Number(item.lng) !== 0; }
   function visibleSpots(day) { return day.spots; }
   function lines(value) { return String(value || "").split(/\r?\n/).map(item => item.trim()).filter(Boolean); }

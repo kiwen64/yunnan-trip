@@ -124,6 +124,8 @@ h1 { margin: 0; font: 500 clamp(28px, 3.1vw, 45px)/1.15 Georgia, "Songti SC", se
 .spot-arrow { align-self: center; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: var(--paper-deep); color: var(--green); }
 .stay-card { background: #e8eee9; border-color: rgba(31,89,75,.16); }
 .stay-card .timeline-dot { background: var(--green); }
+.food-card { background: #fff7e9; border-color: rgba(196,125,85,.24); }
+.food-card .chip:first-child { color: #8e4f2d; background: #f8e6d3; }
 
 .notice-section { margin-top: 44px; padding-top: 30px; border-top: 1px solid var(--line); }
 .section-title { margin-bottom: 16px; }
@@ -174,6 +176,19 @@ h1 { margin: 0; font: 500 clamp(28px, 3.1vw, 45px)/1.15 Georgia, "Songti SC", se
 .drawer-section h3 { margin: 0 0 11px; font-size: 12px; letter-spacing: .1em; }
 .drawer-section p, .drawer-section li { color: var(--ink-soft); font-size: 12px; line-height: 1.7; }
 .drawer-section ul { margin: 0; padding-left: 18px; }
+.evidence-section { padding: 18px; margin-top: 14px; border: 1px solid rgba(196,125,85,.22); border-radius: 15px; background: #fff8ec; }
+.source-link { display: inline-flex; align-items: center; margin-top: 8px; color: var(--green); font-size: 11px; font-weight: 800; text-decoration: none; }
+.source-link:hover { text-decoration: underline; }
+.stay-options { display: grid; gap: 12px; }
+.stay-options > h3 { margin-bottom: 0; }
+.stay-option { padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.62); }
+.stay-option-head { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 9px; margin-bottom: 9px; }
+.stay-option-head h3 { margin: 0; color: var(--ink); font-size: 13px; letter-spacing: 0; }
+.stay-option-tag { padding: 5px 7px; border-radius: 999px; color: #8e4f2d; background: #f8e6d3; font-size: 9px; font-weight: 800; white-space: nowrap; }
+.stay-option p { margin: 6px 0; }
+.stay-option p b { color: var(--ink); }
+.stay-option-links { display: flex; flex-wrap: wrap; gap: 14px; }
+.stay-hero .chip { background: #e5eee9; }
 .drawer-actions { position: sticky; bottom: -28px; display: flex; gap: 9px; padding: 18px 0 28px; background: linear-gradient(transparent, var(--paper) 20%); }
 .drawer-actions .btn { flex: 1; text-decoration: none; text-align: center; }
 
