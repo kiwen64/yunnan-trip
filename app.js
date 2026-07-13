@@ -106,7 +106,11 @@
   }
 
   function renderNotices() {
-    $("#noticeGrid").innerHTML = trip.notes.map(note => `<article class="notice-card"><span class="notice-icon">${escapeHtml(note.icon)}</span><h3>${escapeHtml(note.title)}</h3><p>${escapeHtml(note.body)}</p></article>`).join("");
+    const note = trip.notes?.[activeDayIndex] || window.DEFAULT_TRIP.notes?.[activeDayIndex];
+    $("#noticeTitle").textContent = `Day ${activeDayIndex + 1} 的行前提醒`;
+    $("#noticeGrid").innerHTML = note
+      ? `<article class="notice-card" data-notice-day="${activeDayIndex + 1}"><span class="notice-icon">${escapeHtml(note.icon)}</span><div><h3>${escapeHtml(note.title)}</h3><p>${escapeHtml(note.body)}</p></div></article>`
+      : `<article class="notice-card notice-empty"><span class="notice-icon">${String(activeDayIndex + 1).padStart(2, "0")}</span><div><h3>当天暂无提醒</h3><p>可以通过编辑行程继续补充。</p></div></article>`;
     renderPacking();
   }
 
