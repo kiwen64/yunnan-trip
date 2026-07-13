@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#16372f">
+  <meta name="description" content="可编辑的丽江大理五日旅行地图与行程助手">
+  <title>云游手记 · 丽江大理五日行程</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="map-pane" id="mapPane" aria-label="旅行地图">
+      <div id="map"></div>
+
+      <div class="map-brand glass-card">
+        <span class="brand-mark">云</span>
+        <div>
+          <strong>云游手记</strong>
+          <small>YUNNAN · 5 DAYS</small>
+        </div>
+      </div>
+
+      <section class="weather-card glass-card" aria-live="polite">
+        <div class="weather-current">
+          <span class="weather-icon" id="weatherIcon">☀</span>
+          <div><strong id="weatherTemp">--°</strong><small id="weatherCity">天气加载中</small></div>
+        </div>
+        <div class="weather-days" id="weatherDays"></div>
+      </section>
+
+      <div class="map-actions">
+        <button class="icon-btn glass-card" id="fitRouteBtn" title="显示完整路线" aria-label="显示完整路线">⌁</button>
+        <button class="icon-btn glass-card" id="locateBtn" title="定位到我" aria-label="定位到我">◎</button>
+      </div>
+
+      <div class="map-legend glass-card">
+        <span><i class="legend-dot spot-dot"></i>景点</span>
+        <span><i class="legend-dot hotel-dot"></i>住宿</span>
+        <span><i class="legend-dot me-dot"></i>我的位置</span>
+      </div>
+    </aside>
+
+    <main class="content-pane" id="routePane">
+      <header class="trip-header">
+        <div>
+          <p class="eyebrow">A SLOW JOURNEY TO YUNNAN</p>
+          <h1 id="tripTitle">云南五日 · 风花雪月</h1>
+          <p class="trip-subtitle" id="tripSubtitle"></p>
+        </div>
+        <div class="header-actions">
+          <button class="btn secondary" id="shareBtn">分享行程</button>
+          <button class="btn primary" id="settingsBtn">编辑行程</button>
+          <button class="more-btn" id="moreBtn" aria-label="更多操作">•••</button>
+          <div class="more-menu" id="moreMenu">
+            <button id="exportBtn">导出 JSON</button>
+            <label for="importInput">导入 JSON</label>
+            <input id="importInput" type="file" accept="application/json" hidden>
+            <button id="resetBtn" class="danger-text">恢复示例</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="trip-overview" id="tripOverview"></section>
+
+      <nav class="day-tabs" id="dayTabs" aria-label="行程日期"></nav>
+
+      <div class="day-heading">
+        <div>
+          <span class="day-kicker" id="dayKicker">DAY 01</span>
+          <h2 id="dayTitle"></h2>
+          <p id="daySummary"></p>
+        </div>
+        <button class="text-btn" id="editDayBtn">编辑当天</button>
+      </div>
+
+      <section class="timeline" id="timeline" aria-label="当天行程"></section>
+
+      <section class="notice-section" id="noticeSection">
+        <div class="section-title">
+          <div><span class="day-kicker">BEFORE YOU GO</span><h2>出发前，记住这些</h2></div>
+        </div>
+        <div class="notice-grid" id="noticeGrid"></div>
+
+        <div class="packing-section">
+          <div class="packing-heading">
+            <div>
+              <span class="day-kicker">PACK SMART</span>
+              <h2>五日旅行物品清单</h2>
+              <p>按照丽江、大理雨季和高原温差准备，点一下即可勾选。</p>
+            </div>
+            <button class="text-btn" id="packingResetBtn">清空勾选</button>
+          </div>
+          <div class="packing-progress" aria-live="polite">
+            <div><strong id="packingProgressText">0 / 0</strong><span>已准备</span></div>
+            <div class="packing-progress-track"><i id="packingProgressBar"></i></div>
+          </div>
+          <div class="packing-grid" id="packingGrid"></div>
+          <p class="packing-note">药品请根据个人既往用药和医嘱携带；氧气等特殊物品需先核对航空公司携带规定。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="手机页面导航">
+    <button class="active" data-mobile-view="map"><span>⌖</span>地图</button>
+    <button data-mobile-view="route"><span>☷</span>行程</button>
+    <button data-mobile-view="tips"><span>◇</span>须知</button>
+  </nav>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="detail-drawer" id="detailDrawer" aria-label="景点详情" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" aria-label="关闭">×</button>
+    <div id="drawerContent"></div>
+  </aside>
+
+  <div class="modal-backdrop" id="editorBackdrop">
+    <section class="editor-modal" role="dialog" aria-modal="true" aria-labelledby="editorTitle">
+      <div class="editor-head">
+        <div><span class="day-kicker">MAKE IT YOURS</span><h2 id="editorTitle">编辑行程</h2></div>
+        <button class="drawer-close" id="editorClose" aria-label="关闭">×</button>
+      </div>
+      <form id="editorForm"></form>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="120" fill="#16372f"/>
+  <circle cx="256" cy="256" r="164" fill="#f7f5ef" opacity=".1"/>
+  <path d="M118 335c71-97 127-142 168-137 37 5 51 69 108 38-34 91-103 145-207 124z" fill="#e7c787"/>
+  <path d="M120 335c75-53 137-77 187-71 35 4 59 24 90 13-43 65-112 99-207 84z" fill="#6ea397"/>
+  <text x="256" y="248" text-anchor="middle" fill="#fff" font-size="170" font-family="serif">云</text>
+</svg>
