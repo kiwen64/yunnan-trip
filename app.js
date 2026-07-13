@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "yunnan-trip-v5-food-stays";
+  const STORAGE_KEY = "yunnan-trip-v6-budget-full-days";
   const PACKING_KEY = "yunnan-packing-checked-v1";
   const $ = (selector) => document.querySelector(selector);
   const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -85,7 +85,7 @@
       <article class="timeline-item" data-stay="true">
         <time class="time-label">夜宿</time><i class="timeline-dot" style="background:${day.color}"></i>
         <div class="spot-card stay-card" data-action="open-stay">
-          <div><h3>⌂ ${escapeHtml(day.stay.name)}</h3><p>${escapeHtml(day.stay.address)}</p><div class="spot-meta"><span class="chip">住宿建议</span><span class="chip">${day.stay.options?.length || 0} 个有依据的选择</span><span class="chip">查看预订提醒</span></div></div><span class="spot-arrow">→</span>
+          <div><h3>⌂ ${escapeHtml(day.stay.name)}</h3><p>${escapeHtml(day.stay.address)}</p><div class="spot-meta"><span class="chip">${escapeHtml(day.stay.budget || "住宿建议")}</span><span class="chip">${day.stay.options?.length || 0} 个预算候选</span><span class="chip">查看比价规则</span></div></div><span class="spot-arrow">→</span>
         </div>
       </article>` : "";
     $("#timeline").innerHTML = spots + stay + `
@@ -334,13 +334,14 @@
       const evidenceUrl = safeExternalUrl(option.evidenceUrl);
       return `<article class="stay-option">
         <div class="stay-option-head"><span class="stay-option-tag">${escapeHtml(option.tag || "住宿候选")}</span><h3>${escapeHtml(option.name)}</h3></div>
+        ${option.price ? `<p><b>预算判断：</b>${escapeHtml(option.price)}</p>` : ""}
         <p><b>为什么推荐：</b>${escapeHtml(option.evidence || "")}</p>
         <p><b>更适合：</b>${escapeHtml(option.fit || "")}</p>
         <div class="stay-option-links">${hotelUrl ? `<a class="source-link" href="${escapeAttr(hotelUrl)}" target="_blank" rel="noopener">查看酒店 / 房型 ↗</a>` : ""}${evidenceUrl ? `<a class="source-link" href="${escapeAttr(evidenceUrl)}" target="_blank" rel="noopener">查看榜单依据 ↗</a>` : ""}</div>
       </article>`;
     }).join("");
     $("#drawerContent").innerHTML = `
-      <header class="drawer-hero stay-hero"><span class="drawer-index">STAY · DAY ${String(activeDayIndex + 1).padStart(2,"0")}</span><h2>${escapeHtml(stay.name)}</h2><p>${escapeHtml(stay.address)}</p><div class="spot-meta"><span class="chip">${stay.options?.length || 0} 个住宿候选</span><span class="chip">已给预订核验项</span></div></header>
+      <header class="drawer-hero stay-hero"><span class="drawer-index">STAY · DAY ${String(activeDayIndex + 1).padStart(2,"0")}</span><h2>${escapeHtml(stay.name)}</h2><p>${escapeHtml(stay.address)}</p><div class="spot-meta"><span class="chip">${escapeHtml(stay.budget || "按结算页核价")}</span><span class="chip">${stay.options?.length || 0} 个住宿候选</span><span class="chip">携程 / 美团同名比价</span></div></header>
       <section class="drawer-section"><h3>为什么住这里</h3><p>${escapeHtml(stay.why || stay.address)}</p></section>
       <section class="drawer-section stay-options"><h3>有依据的住宿选择</h3>${options || "<p>还没有填写具体住宿候选。</p>"}</section>
       <section class="drawer-section"><h3>下单前逐项确认</h3><ul>${(stay.booking || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
