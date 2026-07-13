@@ -91,12 +91,6 @@ h1 { margin: 0; font: 500 clamp(28px, 3.1vw, 45px)/1.15 Georgia, "Songti SC", se
 .overview-item + .overview-item { padding-left: 20px; border-left: 1px solid var(--line); }
 .overview-item span { display: block; color: var(--ink-soft); font-size: 9px; letter-spacing: .12em; }
 .overview-item strong { display: block; margin-top: 4px; font: 500 14px/1.4 Georgia, "Songti SC", serif; }
-.arrival-switch { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid var(--line); }
-.arrival-switch span, .arrival-switch small { display: block; color: var(--ink-soft); font-size: 9px; }
-.arrival-switch strong { display: block; margin: 3px 0; font: 500 14px/1.3 Georgia, "Songti SC", serif; }
-.arrival-options { display: flex; gap: 4px; padding: 4px; background: var(--paper-deep); border-radius: 12px; }
-.arrival-options button { padding: 8px 13px; border: 0; border-radius: 9px; background: transparent; color: var(--ink-soft); font-size: 11px; font-weight: 800; cursor: pointer; }
-.arrival-options button.active { background: white; color: var(--green); box-shadow: 0 4px 12px rgba(24,49,43,.08); }
 .share-help { display: grid; gap: 14px; }
 .share-help section { padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper-deep); }
 .share-help h3 { margin: 5px 0 7px; font: 600 17px/1.35 Georgia, "Songti SC", serif; color: var(--ink); }
@@ -232,8 +226,6 @@ h1 { margin: 0; font: 500 clamp(28px, 3.1vw, 45px)/1.15 Georgia, "Songti SC", se
   .header-actions { flex-wrap: wrap; }
   .trip-overview { grid-template-columns: 1fr 1fr; }
   .overview-item:nth-child(3) { grid-column: 1/-1; padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
-  .arrival-switch { align-items: flex-end; }
-  .arrival-switch small { max-width: 130px; }
   .day-heading { align-items: flex-start; }
   .timeline::before { left: 46px; }
   .timeline-item { grid-template-columns: 34px 1fr; gap: 24px; }

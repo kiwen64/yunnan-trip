@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "yunnan-trip-v3-july15";
+  const STORAGE_KEY = "yunnan-trip-v4-six-days";
   const PACKING_KEY = "yunnan-packing-checked-v1";
   const $ = (selector) => document.querySelector(selector);
   const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -61,24 +61,10 @@
     $("#tripSubtitle").textContent = trip.subtitle;
     const cities = [...new Set(trip.days.flatMap(day => day.city.split("→").map(city => city.trim())))].join(" · ");
     const dateText = trip.startDate ? formatRange(trip.startDate, trip.days.length) : "日期待定";
-    const arrivalLabels = {
-      morning: "上午抵达丽江",
-      evening: "晚上抵达丽江",
-      midnight: "7 月 15 日 00:15 抵达"
-    };
-    const arrivalLabel = arrivalLabels[trip.arrivalMode] || arrivalLabels.morning;
     $("#tripOverview").innerHTML = `
-      <div class="overview-item"><span>TRIP LENGTH</span><strong>${trip.days.length} 天 4 夜</strong></div>
+      <div class="overview-item"><span>TRIP LENGTH</span><strong>${trip.days.length} 天</strong></div>
       <div class="overview-item"><span>DESTINATIONS</span><strong>${cities}</strong></div>
-      <div class="overview-item"><span>DATE & PARTY</span><strong>${dateText} · ${escapeHtml(trip.companions)}</strong></div>
-      <div class="arrival-switch" role="group" aria-label="丽江抵达时间">
-        <div><span>抵达方案</span><strong>${arrivalLabel}</strong><small>切换后，第 1–3 天会自动调整</small></div>
-        <div class="arrival-options">
-          <button class="${trip.arrivalMode === "morning" ? "active" : ""}" data-arrival-mode="morning">上午到</button>
-          <button class="${trip.arrivalMode === "evening" ? "active" : ""}" data-arrival-mode="evening">晚上到</button>
-          <button class="${trip.arrivalMode === "midnight" ? "active" : ""}" data-arrival-mode="midnight">00:15 到</button>
-        </div>
-      </div>`;
+      <div class="overview-item"><span>DATE & PARTY</span><strong>${dateText} · ${escapeHtml(trip.companions)}</strong></div>`;
   }
 
   function renderTabs() {
@@ -93,7 +79,7 @@
     if (!day) return;
     $("#dayKicker").textContent = `DAY ${String(activeDayIndex + 1).padStart(2, "0")} · ${dayDate(activeDayIndex)}`;
     $("#dayTitle").textContent = day.title;
-    $("#daySummary").textContent = day.summaryByArrival?.[trip.arrivalMode] || day.summary;
+    $("#daySummary").textContent = day.summary;
     const spots = visibleSpots(day).map((spot, index) => timelineCard(spot, index)).join("");
     const stay = day.stay ? `
       <article class="timeline-item" data-stay="true">
@@ -271,16 +257,6 @@
       renderPacking();
       toast("物品清单已清空");
     });
-    $("#tripOverview").addEventListener("click", event => {
-      const button = event.target.closest("[data-arrival-mode]");
-      if (!button || trip.arrivalMode === button.dataset.arrivalMode) return;
-      trip.arrivalMode = button.dataset.arrivalMode;
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(trip));
-      activeSpotId = null;
-      renderAll();
-      const messages = { morning: "已切换为上午抵达方案", evening: "已切换为晚上抵达方案", midnight: "已切换为 00:15 抵达方案" };
-      toast(messages[button.dataset.arrivalMode] || "抵达方案已更新");
-    });
     $("#dayTabs").addEventListener("click", event => {
       const button = event.target.closest("[data-day-index]");
       if (!button) return;
@@ -359,7 +335,6 @@
       ${field("行程名称", "title", trip.title, "text", true)}
       ${field("开始日期", "startDate", trip.startDate, "date")}
       ${field("同行信息", "companions", trip.companions)}
-      <div class="field"><label for="f-arrivalMode">抵达丽江时间</label><select id="f-arrivalMode" name="arrivalMode"><option value="morning" ${trip.arrivalMode === "morning" ? "selected" : ""}>上午抵达</option><option value="evening" ${trip.arrivalMode === "evening" ? "selected" : ""}>晚上抵达</option><option value="midnight" ${trip.arrivalMode === "midnight" ? "selected" : ""}>7 月 15 日 00:15 抵达</option></select></div>
       ${textarea("行程简介", "subtitle", trip.subtitle, true)}
       <p class="form-hint">页面内修改会保存在当前设备。需要带到另一台设备时，可使用“分享行程”复制含数据的链接，或导出 JSON。</p>
     </div>${formActions()}`;
@@ -406,7 +381,7 @@
     event.preventDefault();
     const values = Object.fromEntries(new FormData(event.currentTarget).entries());
     if (editorContext.type === "trip") {
-      Object.assign(trip, { title: values.title, startDate: values.startDate, companions: values.companions, subtitle: values.subtitle, arrivalMode: values.arrivalMode });
+      Object.assign(trip, { title: values.title, startDate: values.startDate, companions: values.companions, subtitle: values.subtitle });
     } else if (editorContext.type === "day") {
       const day = trip.days[editorContext.dayIndex];
       Object.assign(day, { city: values.city, title: values.title, summary: values.summary, transport: values.transport, distance: values.distance });
@@ -499,10 +474,10 @@
   function navigate(place) { window.open(amapUrl(place), "_blank", "noopener"); }
   function amapUrl(place) { return `https://uri.amap.com/navigation?to=${place.lng},${place.lat},${encodeURIComponent(place.name)}&mode=car&policy=1&src=yunnan-trip&coordinate=wgs84&callnative=1`; }
   function validCoords(item) { return item && Number.isFinite(Number(item.lat)) && Number.isFinite(Number(item.lng)) && Number(item.lat) !== 0 && Number(item.lng) !== 0; }
-  function visibleSpots(day) { return day.spots.filter(spot => !spot.arrivalModes || spot.arrivalModes.includes(trip.arrivalMode || "morning")); }
+  function visibleSpots(day) { return day.spots; }
   function lines(value) { return String(value || "").split(/\r?\n/).map(item => item.trim()).filter(Boolean); }
   function slugify(value) { return String(value || "spot").toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, "-").replace(/^-|-$/g, "") || "spot"; }
-  function dayDate(index) { if (!trip.startDate) return ["抵达", "雪山", "转场", "环海", "返程"][index] || "待定"; const date = new Date(`${trip.startDate}T00:00:00`); date.setDate(date.getDate() + index); return `${date.getMonth()+1}/${date.getDate()}`; }
+  function dayDate(index) { if (!trip.startDate) return ["抵达", "云杉坪", "转大理", "环洱海", "转昆明", "返南京"][index] || "待定"; const date = new Date(`${trip.startDate}T00:00:00`); date.setDate(date.getDate() + index); return `${date.getMonth()+1}/${date.getDate()}`; }
   function formatRange(start, length) { const from = new Date(`${start}T00:00:00`); const to = new Date(from); to.setDate(to.getDate() + length - 1); return `${from.getMonth()+1}.${from.getDate()}—${to.getMonth()+1}.${to.getDate()}`; }
   function weekday(date) { return new Intl.DateTimeFormat("zh-CN", { weekday: "short" }).format(new Date(`${date}T00:00:00`)); }
   function toast(message) { const el = $("#toast"); el.textContent = message; el.classList.add("show"); clearTimeout(toast.timer); toast.timer = setTimeout(() => el.classList.remove("show"), 2400); }
