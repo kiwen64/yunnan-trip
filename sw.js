@@ -1,5 +1,5 @@
-const CACHE = "yunnan-trip-shell-v12";
-const SHELL = ["./", "./index.html", "./styles.css", "./data.js", "./app.js", "./manifest.json", "./icon.svg"];
+const CACHE = "yunnan-trip-shell-v14";
+const SHELL = ["./", "./index.html", "./styles.css", "./data.js", "./media.js", "./app.js", "./manifest.json", "./icon.svg"];
 self.addEventListener("install", event => {
   self.skipWaiting();
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));

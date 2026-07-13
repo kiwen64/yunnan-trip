@@ -1,0 +1,297 @@
+[
+  {
+    "spotId": "li-family-noodles",
+    "sourceName": "Trip.com 餐厅实拍",
+    "sourceUrl": "https://us.trip.com/restaurant/china/lijiang/detail/restaurant-18599670",
+    "images": [
+      "https://ak-d.tripcdn.com/images/10010l000000cwb7t60BB_C_240_240_R5.jpg?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/10010l000000cwb7t60BB_C_240_240_R5.jpg?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/100r0l000000cljfgFDF2_C_240_240_R5.jpg?proc=source%2Ftrip"
+    ]
+  },
+  {
+    "spotId": "shuhe-day1",
+    "sourceName": "新浪旅行实拍",
+    "sourceUrl": "https://k.sina.cn/article_6043213407_168341e5f00100lbdt.html?from=travel",
+    "images": [
+      "https://k.sinaimg.cn/n/sinacn20190812ac/356/w700h456/20190812/266c-icapxph4363408.jpg/w700d1q75cms.jpg",
+      "https://k.sinaimg.cn/n/sinacn20190812ac/360/w700h460/20190812/2f32-icapxph4363409.jpg/w700d1q75cms.jpg",
+      "https://k.sinaimg.cn/n/sinacn20190812ac/356/w700h456/20190812/75cb-icapxph4363420.jpg/w700d1q75cms.jpg"
+    ]
+  },
+  {
+    "spotId": "lijiang-oldtown-day1",
+    "sourceName": "携程景点实拍",
+    "sourceUrl": "https://gs.ctrip.com/html5/you/sight/lijiang32/3056.html",
+    "images": [
+      "https://dimg04.c-ctrip.com/images/0100j12000g2oj728A7F4_W_750_0.jpg?proc=autoorient",
+      "https://dimg04.c-ctrip.com/images/100f12000000rz2qm851C_W_750_0.jpg?proc=autoorient",
+      "https://dimg04.c-ctrip.com/images/0100g120008c4m8hw1A0C_W_750_0.jpg?proc=autoorient"
+    ]
+  },
+  {
+    "spotId": "ama-ribs",
+    "sourceName": "大众点评餐厅实拍",
+    "sourceUrl": "https://www.dianping.com/shop/H5NVRUthi3iXoWQy/photos",
+    "images": [
+      "https://qcloud.dpfile.com/pc/c6ZHqPzX3E9chVBwsbUWwItUWkTBt08CQ9d-qAR_TvxhRg2nPLFmNq8qK9DCxoLYl0cm-Lf9tDMlLZpO7rb3bg.jpg",
+      "https://p0.meituan.net/ugcpic/8fafd05000f745aebbe9bdc081edd443984754.jpg%40240w_180h_1e_1c_1l%7Cwatermark%3D0",
+      "https://qcloud.dpfile.com/pc/f024gR8qC1AHnj6dHUA-Ocaaw0Oa17jd4v6PRAU3xiXcqS48o594hGx6r1CwtmlIl0cm-Lf9tDMlLZpO7rb3bg.jpg"
+    ]
+  },
+  {
+    "spotId": "yunshanping",
+    "sourceName": "携程云杉坪实拍",
+    "sourceUrl": "https://gs.ctrip.com/html5/you/sight/yulong1446279/12467.html",
+    "images": [
+      "https://dimg04.c-ctrip.com/images/100h13000000twch6065A_W_750_0.jpg?proc=autoorient",
+      "https://dimg04.c-ctrip.com/images/fd/tg/g2/M04/2E/D4/CghzgFW2LBOAQOWFAAgJWDSnBtg520_W_750_0.jpg?proc=autoorient",
+      "https://dimg04.c-ctrip.com/images/0101u1200087e3kbn6607_W_750_0.jpg?proc=autoorient"
+    ]
+  },
+  {
+    "spotId": "blue-moon",
+    "sourceName": "Trip.com 蓝月谷实拍",
+    "sourceUrl": "https://jp.trip.com/travel-guide/attraction/yulong/blue-moon-valley-91410/",
+    "images": [
+      "https://ak-d.tripcdn.com/images/0102u1200087dl1bw91F0_W_960_0_R5_Q60.webp?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/010141200087e6llgB406_W_960_0_R5_Q60.webp?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/0100o12000g2olofmBD2C_W_960_0_R5_Q60.webp?proc=source%2Ftrip"
+    ]
+  },
+  {
+    "spotId": "yunxueli-mufu",
+    "sourceName": "携程餐厅实拍",
+    "sourceUrl": "https://you.ctrip.com/food/lijiang32/22505204.html",
+    "images": [
+      "https://dimg04.c-ctrip.com/images/01008120008d6etwt3175.jpg",
+      "https://dimg04.c-ctrip.com/images/01065120008d6ff1aA90C.jpg",
+      "https://dimg04.c-ctrip.com/images/10011e000001g7bj9CB88.jpg"
+    ]
+  },
+  {
+    "spotId": "zhongyi-market",
+    "sourceName": "Trip.com 忠义市场实拍",
+    "sourceUrl": "https://www.trip.com/travel-guide/attraction/lijiang/ancient-city-zhongyi-market-10523034/",
+    "images": [
+      "https://ak-d.tripcdn.com/images/0101a12000m1yw901D866_W_960_0_R5_Q60.webp?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/0103v12000mprgy4w2763_W_960_0_R5_Q60.webp?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/0100712000mprfzed4FCA_W_960_0_R5_Q60.webp?proc=source%2Ftrip"
+    ]
+  },
+  {
+    "spotId": "baisha",
+    "sourceName": "携程白沙古镇实拍",
+    "sourceUrl": "https://gs.ctrip.com/html5/you/sight/yulong1446279/17965.html",
+    "images": [
+      "https://dimg04.c-ctrip.com/images/01A2g120008ry6iq57E51_W_750_0.jpg?proc=autoorient",
+      "https://dimg04.c-ctrip.com/images/0101a12000nq00ipn47B4_W_750_0.jpg?proc=autoorient",
+      "https://dimg04.c-ctrip.com/images/0102712000mjdjwt10741_W_750_0.jpg?proc=autoorient"
+    ]
+  },
+  {
+    "spotId": "baisha-local-lunch",
+    "sourceName": "云南日报地方小吃实拍",
+    "sourceUrl": "https://www.yndaily.com/html/2024/yunxinwen_0711/126801.html",
+    "images": [
+      "https://img-cdn.yndaily.com/fz/YXWAPP/2024-07/11/38065926-8f61-42c8-a5da-ab7596d10184.jpeg?x-image-process=image%2Fquality%2Cq_95",
+      "https://img-cdn.yndaily.com/fz/YXWAPP/2024-07/11/ab798615-a403-4dfd-adca-7489bc20608a.jpeg?x-image-process=image%2Fquality%2Cq_95",
+      "https://img-cdn.yndaily.com/fz/YXWAPP/2024-07/11/b46f3f13-89f4-467a-9edc-5d04b7b7d930.jpeg?x-image-process=image%2Fquality%2Cq_95"
+    ]
+  },
+  {
+    "spotId": "shiweiyuan-dali",
+    "sourceName": "Trip.com 餐厅实拍",
+    "sourceUrl": "https://tw.trip.com/restaurant/china/dali/detail/restaurant-121123311",
+    "images": [
+      "https://ak-d.tripcdn.com/images/1mh1b12000gi8yskp4D72_C_340_230_R5.jpg?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/1mh1p12000gi9ka5q8946_C_340_230_R5.jpg?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/1mh1212000gi92c7i7258_C_340_230_R5.jpg?proc=source%2Ftrip"
+    ]
+  },
+  {
+    "spotId": "dali-oldtown-night",
+    "sourceName": "搜狐大理古城实拍",
+    "sourceUrl": "https://www.sohu.com/a/907196115_120125395",
+    "images": [
+      "https://q2.itc.cn/q_70/images03/20250624/8de7af31694b4e499ed136f92cc51a06.jpeg",
+      "https://q3.itc.cn/q_70/images03/20250624/b171e05740354f45b1d633e133291b19.jpeg",
+      "https://q3.itc.cn/q_70/images03/20250624/a7e87838737e45ada60fe72261cb1538.jpeg"
+    ]
+  },
+  {
+    "spotId": "longkan",
+    "sourceName": "搜狐龙龛码头实拍",
+    "sourceUrl": "https://www.sohu.com/a/976074300_120815119",
+    "images": [
+      "https://q0.itc.cn/q_70/images03/20260114/03060c930ef64c1eb2358734ffcc3b58.jpeg",
+      "https://q3.itc.cn/q_70/images03/20260114/049d6bf9cbd24549b56acfcb7a411fb7.jpeg",
+      "https://q0.itc.cn/q_70/images03/20260114/b7e31e9a2c0b45cc88157b0c5008b62f.jpeg"
+    ]
+  },
+  {
+    "spotId": "langqiao",
+    "sourceName": "Trip.com 廊桥实拍",
+    "sourceUrl": "https://www.trip.com/moments/detail/dali-1445616-129615026/",
+    "images": [
+      "https://ak-d.tripcdn.com/images/1mi6j224x8zl4aswqD315_W_640_0_R5_Q80.jpg?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/1mi31224x8zl4ikp1F0A8_W_640_0_R5_Q80.jpg?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/1mi69224x8zl4k73zFD67_W_640_0_R5_Q80.jpg?proc=source%2Ftrip"
+    ]
+  },
+  {
+    "spotId": "yiwan-xizhou",
+    "sourceName": "携程餐厅实拍",
+    "sourceUrl": "https://you.ctrip.com/food/dalicity1445616/149573519.html",
+    "images": [
+      "https://dimg04.c-ctrip.com/images/1me3x12000gmjd1960D19.jpg",
+      "https://dimg04.c-ctrip.com/images/1me3x12000gmjd1960D19.jpg",
+      {
+        "url": "https://imagepphcloud.thepaper.cn/pph/image/243/359/687.jpg",
+        "sourceName": "澎湃新闻喜洲实拍",
+        "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_22351175"
+      }
+    ]
+  },
+  {
+    "spotId": "xizhou",
+    "sourceName": "澎湃新闻喜洲实拍",
+    "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_22351175",
+    "images": [
+      "https://imagepphcloud.thepaper.cn/pph/image/243/359/608.jpg",
+      "https://imagepphcloud.thepaper.cn/pph/image/243/359/632.jpg",
+      "https://imagepphcloud.thepaper.cn/pph/image/243/359/687.jpg"
+    ]
+  },
+  {
+    "spotId": "haitongue",
+    "sourceName": "澎湃新闻海舌实拍",
+    "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_22351175",
+    "images": [
+      "https://imagepphcloud.thepaper.cn/pph/image/243/359/641.jpg",
+      "https://imagepphcloud.thepaper.cn/pph/image/243/359/643.jpg",
+      "https://imagepphcloud.thepaper.cn/pph/image/243/359/645.jpg"
+    ]
+  },
+  {
+    "spotId": "datian-longkan-dinner",
+    "sourceName": "大众点评餐厅页面",
+    "sourceUrl": "https://m.dianping.com/shopshare/1877831141",
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0104412000a95yginDCDA_D_300_200_R5.jpg",
+        "sourceName": "Trip.com · 天麻鸡菜品参考",
+        "sourceUrl": "https://hk.trip.com/restaurant/china/zhaotong/detail/restaurant-42913888/"
+      },
+      {
+        "url": "https://assets.glshimg.com/news/special/sjguilin37/images/full/04.jpg",
+        "sourceName": "桂林生活网 · 猪脚菜品参考 · 周俊远摄",
+        "sourceUrl": "https://apply.guilinlife.com/special/sjguilin37/index.html"
+      },
+      {
+        "url": "https://p0.meituan.net/biztone/147b7e203f7f9e8be5520b3ffbf2bff5728257.jpg%40300w_1e_1l%7Cwatermark%3D0.webp",
+        "sourceName": "大众点评 · 餐厅田园环境参考",
+        "sourceUrl": "https://m.dianping.com/shopshare/1877831141"
+      }
+    ]
+  },
+  {
+    "spotId": "three-pagodas",
+    "sourceName": "搜狐崇圣寺三塔实拍",
+    "sourceUrl": "https://www.sohu.com/a/445381428_120793975",
+    "images": [
+      "https://p3.itc.cn/images01/20210119/92781b61cdb54387a8bf141ac1c7faaf.jpeg",
+      "https://p0.itc.cn/images01/20210119/0a46068bfef248649708799ef0228f8e.jpeg"
+    ]
+  },
+  {
+    "spotId": "dali-oldtown-day5",
+    "sourceName": "搜狐大理古城实拍",
+    "sourceUrl": "https://www.sohu.com/a/907196115_120125395",
+    "images": [
+      "https://q2.itc.cn/q_70/images03/20250624/8de7af31694b4e499ed136f92cc51a06.jpeg",
+      "https://q3.itc.cn/q_70/images03/20250624/b171e05740354f45b1d633e133291b19.jpeg",
+      "https://q3.itc.cn/q_70/images03/20250624/a7e87838737e45ada60fe72261cb1538.jpeg"
+    ]
+  },
+  {
+    "spotId": "zaihuishou-noodles",
+    "sourceName": "搜狐餐厅实拍",
+    "sourceUrl": "https://www.sohu.com/a/201024506_404165",
+    "images": [
+      "https://5b0988e595225.cdn.sohucs.com/images/20171029/b1459cd94d7f4651a43fbd0a4ed38691.jpeg",
+      "https://5b0988e595225.cdn.sohucs.com/images/20171029/74636c06a94f428a99f33b5bca63ccfb.jpeg",
+      "https://5b0988e595225.cdn.sohucs.com/images/20171029/7943dce13ffb45d89a2b3e5bfce7182c.jpeg"
+    ]
+  },
+  {
+    "spotId": "zhuanxin-market",
+    "sourceName": "云南网篆新市场实拍",
+    "sourceUrl": "https://minzu.yunnan.cn/system/2021/06/11/031508195.shtml",
+    "images": [
+      "https://society.yunnan.cn/pic/003/039/181/00303918198_c81c4914.png",
+      "https://society.yunnan.cn/pic/003/039/181/00303918199_ed74786f.png",
+      "https://society.yunnan.cn/pic/003/039/182/00303918200_2fba9fd2.png"
+    ]
+  },
+  {
+    "spotId": "juncai-hotpot",
+    "sourceName": "大众点评餐厅实拍",
+    "sourceUrl": "https://www.dianping.com/shop/laTkLFM08kFkvgvD/photos",
+    "images": [
+      "https://qcloud.dpfile.com/pc/yt_E_bR9WvBp8lT2oY-_eFb8YZO-VGzhj9mMy_v3FDO6ael0CeJ2u5J_0LaSHDunl0cm-Lf9tDMlLZpO7rb3bg.jpg",
+      "https://qcloud.dpfile.com/pc/y77xR4xJZ5HgPc7BN79HitL2j4rhrh4I8qiE5PE-WX0fs5IXGgY3_0Ra336ek-X9l0cm-Lf9tDMlLZpO7rb3bg.jpg",
+      "https://qcloud.dpfile.com/pc/GPHHdI6yWQ2JDhpvahI-cOcJG8GKdO8-ot0hfaSVcUBzl6QxVMk327vmlZRx4QT3l0cm-Lf9tDMlLZpO7rb3bg.jpg"
+    ]
+  },
+  {
+    "spotId": "kunming-night",
+    "sourceName": "新华社南强街实拍",
+    "sourceUrl": "https://www.news.cn/2022-10/06/c_1129052481.htm",
+    "images": [
+      "https://www.news.cn/2022-10/06/1129052481_16650315656071n.jpg",
+      "https://www.news.cn/2022-10/06/1129052481_16650315656091n.jpg",
+      "https://www.news.cn/2022-10/06/1129052481_16650315656051n.jpg"
+    ]
+  },
+  {
+    "spotId": "jianxinyuan-noodles",
+    "sourceName": "携程建新园实拍",
+    "sourceUrl": "https://gs.ctrip.com/html5/you/foods/fooddetail/29/15941289.html",
+    "images": [
+      "https://dimg04.c-ctrip.com/images/1mh4212000h4bhe3p1220_D_180_180.jpg?proc=autoorient",
+      "https://dimg04.c-ctrip.com/images/1mh6a12000h4bfcgu94CF_D_180_180.jpg?proc=autoorient",
+      "https://dimg04.c-ctrip.com/images/1mh2412000h4bfuloE958_D_180_180.jpg?proc=autoorient"
+    ]
+  },
+  {
+    "spotId": "green-lake",
+    "sourceName": "昆明信息港翠湖实拍",
+    "sourceUrl": "https://www.kunming.cn/news/c/2024-07-09/13854428.shtml",
+    "images": [
+      "https://www.kunming.cn/news/upload/resources/image/2024/07/09/1661548.jpg?r=1720515529722",
+      "https://www.kunming.cn/news/upload/resources/image/2024/07/09/1661549.jpg?r=1720515529723",
+      "https://i2.chinanews.com.cn/simg/ypt/2026/260206/b9c329b1-ff67-43c4-a3c2-a191410d7947_zsite.jpg"
+    ]
+  },
+  {
+    "spotId": "fuzhaolou-lunch",
+    "sourceName": "Trip.com 福照楼实拍",
+    "sourceUrl": "https://tw.trip.com/restaurant/china/kunming/detail/fuzhaolouqiguo-chicken-restaurant-205519/",
+    "images": [
+      "https://ak-d.tripcdn.com/images/1mh4g12000s2gdsms4B01_C_340_230_R5.jpg?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/1mh5d12000s2gro1e2450_C_340_230_R5.jpg?proc=source%2Ftrip",
+      "https://ak-d.tripcdn.com/images/1mh0p12000s2gtb66A816_C_340_230_R5.jpg?proc=source%2Ftrip"
+    ]
+  },
+  {
+    "spotId": "dounan-flower-market",
+    "sourceName": "斗南花卉产业集团实拍",
+    "sourceUrl": "https://www.dounanflowers.com/archives/599",
+    "images": [
+      "https://www.dounanflowers.com/wp-content/uploads/2026/01/640-d813eb69.png",
+      "https://www.dounanflowers.com/wp-content/uploads/2026/01/640-c830a4a9.jpg",
+      "https://www.dounanflowers.com/wp-content/uploads/2026/01/640-aeab0d3b.jpg"
+    ]
+  }
+]

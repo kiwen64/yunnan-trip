@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "yunnan-trip-v6-budget-full-days";
+  const STORAGE_KEY = "yunnan-trip-v7-transit-media";
   const PACKING_KEY = "yunnan-packing-checked-v1";
   const $ = (selector) => document.querySelector(selector);
   const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -314,7 +314,7 @@
       <header class="drawer-hero"><span class="drawer-index">STOP ${String(visibleIndex + 1).padStart(2,"0")} · ${escapeHtml(day.city)}</span><h2>${escapeHtml(spot.name)}</h2><p>${escapeHtml(spot.description)}</p><div class="spot-meta"><span class="chip">${escapeHtml(spot.time)}</span><span class="chip">${escapeHtml(spot.duration)}</span><span class="chip">${escapeHtml(spot.type)}</span></div></header>
       <section class="drawer-section"><h3>交通方式</h3><p>${escapeHtml(spot.transport)}</p></section>
       <section class="drawer-section"><h3>${food ? "建议点单顺序" : "建议游玩路线"}</h3><p>${escapeHtml(spot.route)}</p></section>
-      <section class="drawer-section"><h3>${food ? "推荐菜与打卡点" : "网红打卡机位"}</h3><ul>${(spot.photoSpots || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
+      ${photoExamplesSection(spot, food)}
       ${evidenceSection}
       <section class="drawer-section"><h3>${food ? "预约与用餐提醒" : "到访提醒"}</h3><ul>${(spot.tips || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>
       <div class="drawer-actions"><button class="btn secondary" id="editSpotBtn">编辑信息</button><a class="btn primary" href="${amapUrl(spot)}" target="_blank" rel="noopener">高德导航 ↗</a></div>`;
@@ -326,6 +326,26 @@
       map.flyTo([spot.lat, spot.lng], 14);
       markers.get(spotId).openTooltip();
     }
+  }
+
+  function photoExamplesSection(spot, food) {
+    const labels = spot.photoSpots || [];
+    const examples = window.SPOT_MEDIA?.[spot.id] || [];
+    const heading = food ? "推荐菜与打卡点" : "网红打卡机位";
+    if (!examples.length) {
+      return `<section class="drawer-section"><h3>${heading}</h3><ul>${labels.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>`;
+    }
+    const cards = labels.map((label, index) => {
+      const example = examples.find(item => item.label === label) || examples[index];
+      if (!example?.src) return `<article class="media-card media-card-missing"><h4>${escapeHtml(label)}</h4><p>暂无示例图</p></article>`;
+      const source = safeExternalUrl(example.sourceUrl);
+      return `<figure class="media-card">
+        <figcaption><strong>${escapeHtml(label)}</strong><span>${escapeHtml(example.license || "示例图")}</span></figcaption>
+        <div class="media-frame"><img src="${escapeAttr(example.src)}" alt="${escapeAttr(label)}示例图" loading="lazy" decoding="async"></div>
+        <div class="media-credit"><span>${escapeHtml(example.author || "实景以当天为准")}</span>${source ? `<a href="${escapeAttr(source)}" target="_blank" rel="noopener">查看原图来源 ↗</a>` : ""}</div>
+      </figure>`;
+    }).join("");
+    return `<section class="drawer-section media-section"><div class="media-section-title"><h3>${heading}</h3><span>${examples.length} 张示例</span></div><p class="media-disclaimer">以下为网络示例图，用来预判构图、菜品和环境；天气、季节、现场陈设与实际摆盘以当天为准。</p><div class="media-gallery">${cards}</div></section>`;
   }
 
   function openStay() {
