@@ -13,7 +13,7 @@
     "spotId": "li-family-noodles",
     "spotName": "正宗李家土鸡米线店",
     "index": 1,
-    "label": "土鸡肉与本地小料",
+    "label": "土鸡肉与汤头细节",
     "queries": [
       "Chinese chicken meat condiments",
       "Chinese chicken dish"
@@ -73,7 +73,7 @@
     "spotId": "lijiang-oldtown-day1",
     "spotName": "丽江古城夜游",
     "index": 1,
-    "label": "大研花巷观景台",
+    "label": "大研花巷观景台与远山",
     "queries": [
       "Lijiang old town panorama",
       "Lijiang Old Town"
@@ -83,7 +83,7 @@
     "spotId": "lijiang-oldtown-day1",
     "spotName": "丽江古城夜游",
     "index": 2,
-    "label": "入夜后的小桥流水",
+    "label": "大石桥与水巷",
     "queries": [
       "Lijiang old town night canal",
       "Lijiang Old Town night"
@@ -93,7 +93,7 @@
     "spotId": "ama-ribs",
     "spotName": "阿妈腊排骨（南门老店）",
     "index": 0,
-    "label": "腊排骨铜锅热气",
+    "label": "腊排骨成菜近景",
     "queries": [
       "Chinese pork ribs hot pot",
       "Chinese pork hot pot"
@@ -103,7 +103,7 @@
     "spotId": "ama-ribs",
     "spotName": "阿妈腊排骨（南门老店）",
     "index": 1,
-    "label": "当地蘸水",
+    "label": "铜锅腊排骨上桌",
     "queries": [
       "Yunnan dipping sauce",
       "Chinese dipping sauce"
@@ -113,7 +113,7 @@
     "spotId": "ama-ribs",
     "spotName": "阿妈腊排骨（南门老店）",
     "index": 2,
-    "label": "南门夜景",
+    "label": "南门店铺夜景",
     "queries": [
       "Lijiang south gate night",
       "Lijiang Old Town night"
@@ -153,7 +153,7 @@
     "spotId": "blue-moon",
     "spotName": "蓝月谷",
     "index": 0,
-    "label": "玉液湖层叠水面",
+    "label": "蓝月湖碧水与远山",
     "queries": [
       "Blue Moon Valley Yunnan lake",
       "Blue Moon Valley Lijiang"
@@ -163,7 +163,7 @@
     "spotId": "blue-moon",
     "spotName": "蓝月谷",
     "index": 1,
-    "label": "雪山与蓝色湖水同框",
+    "label": "瀑布与玉龙雪山同框",
     "queries": [
       "Blue Moon Valley Yunnan snow mountain",
       "Blue Moon Valley Lijiang"
@@ -173,7 +173,7 @@
     "spotId": "blue-moon",
     "spotName": "蓝月谷",
     "index": 2,
-    "label": "白水台阶",
+    "label": "临水木桥与雪山",
     "queries": [
       "Blue Moon Valley Yunnan waterfall",
       "Blue Moon Valley Lijiang"
@@ -223,7 +223,7 @@
     "spotId": "zhongyi-market",
     "spotName": "忠义市场与古城南线",
     "index": 1,
-    "label": "古城南线亮灯后的水巷",
+    "label": "忠义市场与雪山背景",
     "queries": [
       "Lijiang old town canal night",
       "Lijiang Old Town night"
@@ -243,7 +243,7 @@
     "spotId": "baisha",
     "spotName": "白沙古镇",
     "index": 1,
-    "label": "白沙牌坊",
+    "label": "纳西屋檐与雪山同框",
     "queries": [
       "Baisha Naxi town gate",
       "Baisha Yunnan"
@@ -253,7 +253,7 @@
     "spotId": "baisha",
     "spotName": "白沙古镇",
     "index": 2,
-    "label": "临街咖啡店二楼窗口",
+    "label": "二楼咖啡窗口与雪山",
     "queries": [
       "Baisha Yunnan street",
       "Baisha Naxi town"
@@ -263,7 +263,7 @@
     "spotId": "baisha-local-lunch",
     "spotName": "白沙小吃午餐 · 鸡豆凉粉与丽江粑粑",
     "index": 0,
-    "label": "铁板热鸡豆凉粉",
+    "label": "鸡豆凉粉拌料近景",
     "queries": [
       "Jidou liangfen",
       "Yunnan bean jelly food"
@@ -283,7 +283,7 @@
     "spotId": "baisha-local-lunch",
     "spotName": "白沙小吃午餐 · 鸡豆凉粉与丽江粑粑",
     "index": 2,
-    "label": "白沙街边红心洋芋",
+    "label": "白沙街边小吃铺",
     "queries": [
       "Yunnan red potato",
       "Yunnan potato food"
@@ -313,7 +313,7 @@
     "spotId": "shiweiyuan-dali",
     "spotName": "拾味园·白族特色菜",
     "index": 2,
-    "label": "白族庭院用餐空间",
+    "label": "白族庭院餐厅入口",
     "queries": [
       "Bai architecture courtyard Dali",
       "Bai courtyard Dali"
@@ -353,7 +353,7 @@
     "spotId": "longkan",
     "spotName": "龙龛码头",
     "index": 0,
-    "label": "水杉与红嘴鸥（冬季）",
+    "label": "洱海水岸步道",
     "queries": [
       "Erhai Lake cypress trees",
       "Erhai Lake trees"
@@ -373,7 +373,7 @@
     "spotId": "longkan",
     "spotName": "龙龛码头",
     "index": 2,
-    "label": "日出倒影",
+    "label": "水中水杉林远景",
     "queries": [
       "Erhai Lake sunrise",
       "Erhai Lake dawn"
@@ -403,7 +403,7 @@
     "spotId": "langqiao",
     "spotName": "廊桥",
     "index": 2,
-    "label": "草地与苍山洱海同框",
+    "label": "苍山、白族村落与洱海同框",
     "queries": [
       "Erhai Lake Cangshan grass",
       "Cangshan Erhai Lake"
@@ -423,7 +423,7 @@
     "spotId": "yiwan-xizhou",
     "spotName": "一碗·云南传统过桥米线（喜洲田园店）",
     "index": 1,
-    "label": "玫瑰乳扇卷",
+    "label": "乳扇卷",
     "queries": [
       "Rushan cheese Yunnan",
       "Yunnan cheese"
@@ -433,7 +433,7 @@
     "spotId": "yiwan-xizhou",
     "spotName": "一碗·云南传统过桥米线（喜洲田园店）",
     "index": 2,
-    "label": "喜洲田园与白族院落",
+    "label": "喜洲牌坊与白族屋顶",
     "queries": [
       "Xizhou Bai courtyard",
       "Xizhou Yunnan architecture"
@@ -443,7 +443,7 @@
     "spotId": "xizhou",
     "spotName": "喜洲古镇",
     "index": 0,
-    "label": "转角楼经典机位",
+    "label": "稻田与苍山",
     "queries": [
       "Xizhou corner building",
       "Xizhou Yunnan street"
@@ -453,7 +453,7 @@
     "spotId": "xizhou",
     "spotName": "喜洲古镇",
     "index": 1,
-    "label": "麦田 / 稻田与苍山",
+    "label": "白族院墙与稻田",
     "queries": [
       "Xizhou field Cangshan",
       "Xizhou Yunnan field"
@@ -463,7 +463,7 @@
     "spotId": "xizhou",
     "spotName": "喜洲古镇",
     "index": 2,
-    "label": "白族院落照壁",
+    "label": "转角楼经典机位",
     "queries": [
       "Xizhou Bai architecture",
       "Xizhou Yunnan"
@@ -533,7 +533,7 @@
     "spotId": "three-pagodas",
     "spotName": "崇圣寺三塔外景",
     "index": 0,
-    "label": "三塔与苍山同框",
+    "label": "三塔水中倒影近景",
     "queries": [
       "Three Pagodas Dali Cangshan",
       "Three Pagodas Dali"
@@ -553,7 +553,7 @@
     "spotId": "three-pagodas",
     "spotName": "崇圣寺三塔外景",
     "index": 2,
-    "label": "北侧田野远景",
+    "label": "三塔与远山全景",
     "queries": [
       "Three Pagodas Dali field",
       "Three Pagodas Dali"
@@ -563,7 +563,7 @@
     "spotId": "dali-oldtown-day5",
     "spotName": "大理古城慢逛",
     "index": 0,
-    "label": "南门城楼俯瞰屋顶",
+    "label": "南门城墙与古城屋顶",
     "queries": [
       "Dali south gate panorama",
       "Dali Old Town gate"
@@ -583,7 +583,7 @@
     "spotId": "dali-oldtown-day5",
     "spotName": "大理古城慢逛",
     "index": 2,
-    "label": "人民路转角咖啡店",
+    "label": "人民路咖啡店二楼景观位",
     "queries": [
       "Dali Renmin road cafe",
       "Dali Old Town shop"
@@ -593,7 +593,7 @@
     "spotId": "zaihuishou-noodles",
     "spotName": "再回首凉鸡米线（人民路一店）",
     "index": 0,
-    "label": "酸甜辣凉鸡米线",
+    "label": "人民路老店门面",
     "queries": [
       "Yunnan cold rice noodles",
       "Yunnan rice noodles"
@@ -603,7 +603,7 @@
     "spotId": "zaihuishou-noodles",
     "spotName": "再回首凉鸡米线（人民路一店）",
     "index": 1,
-    "label": "鸡肉与本地调料",
+    "label": "老店简朴座位",
     "queries": [
       "Chinese chicken meat condiments",
       "Chinese chicken dish"
@@ -613,7 +613,7 @@
     "spotId": "zaihuishou-noodles",
     "spotName": "再回首凉鸡米线（人民路一店）",
     "index": 2,
-    "label": "人民路老店门面",
+    "label": "酸甜辣凉鸡米线",
     "queries": [
       "Dali old town shop",
       "Dali Old Town street"
@@ -633,7 +633,7 @@
     "spotId": "zhuanxin-market",
     "spotName": "大观篆新农贸市场",
     "index": 1,
-    "label": "云南特色瓜果与鲜花蔬菜",
+    "label": "云南瓜果与鲜花蔬菜",
     "queries": [
       "Yunnan fruit vegetable market",
       "Yunnan market"
@@ -643,7 +643,7 @@
     "spotId": "zhuanxin-market",
     "spotName": "大观篆新农贸市场",
     "index": 2,
-    "label": "烤乳扇和甜白酒摊位",
+    "label": "烤乳扇摊位",
     "queries": [
       "Rushan cheese Yunnan",
       "Yunnan cheese"
@@ -663,7 +663,7 @@
     "spotId": "juncai-hotpot",
     "spotName": "菌彩云南野生菌火锅（顺城店）",
     "index": 1,
-    "label": "金色菌汤",
+    "label": "鲜菌下锅与金色菌汤",
     "queries": [
       "Mushroom soup Chinese cuisine",
       "mushroom soup"
@@ -733,7 +733,7 @@
     "spotId": "jianxinyuan-noodles",
     "spotName": "建新园过桥米线（宝善街店）",
     "index": 2,
-    "label": "昆明甜酱油凉米线",
+    "label": "米线入口近景",
     "queries": [
       "Yunnan cold rice noodles",
       "Yunnan rice noodles"
@@ -753,7 +753,7 @@
     "spotId": "green-lake",
     "spotName": "翠湖公园与讲武堂外景",
     "index": 1,
-    "label": "林荫步道",
+    "label": "翠湖花坛与主题装置",
     "queries": [
       "Green Lake Kunming walkway",
       "Green Lake Kunming"
@@ -783,7 +783,7 @@
     "spotId": "fuzhaolou-lunch",
     "spotName": "福照楼汽锅鸡（胜利堂店）",
     "index": 1,
-    "label": "胜利堂历史建筑外景",
+    "label": "胜利堂入口与历史店招",
     "queries": [
       "Kunming Victory Hall",
       "Kunming Victory Memorial Hall"
@@ -813,7 +813,7 @@
     "spotId": "dounan-flower-market",
     "spotName": "斗南花卉市场 · 晚班机版",
     "index": 1,
-    "label": "云南特色玫瑰与绣球",
+    "label": "鲜切花批发摊位俯瞰",
     "queries": [
       "Yunnan rose hydrangea",
       "rose hydrangea market"

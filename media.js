@@ -9,11 +9,11 @@ window.SPOT_MEDIA = {
       "author": "来源：Trip.com 餐厅实拍"
     },
     {
-      "label": "土鸡肉与本地小料",
-      "src": "./assets/media/li-family-noodles-1.jpg",
-      "sourceUrl": "https://us.trip.com/restaurant/china/lijiang/detail/restaurant-18599670",
+      "label": "土鸡肉与汤头细节",
+      "src": "./assets/media/li-family-noodles-2.jpg",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/10058358075",
       "license": "网络示例图",
-      "author": "来源：Trip.com 餐厅实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     },
     {
       "label": "束河老街店门口",
@@ -34,58 +34,58 @@ window.SPOT_MEDIA = {
     {
       "label": "九鼎龙潭倒影",
       "src": "./assets/media/shuhe-day1-2.jpg",
-      "sourceUrl": "https://k.sina.cn/article_6043213407_168341e5f00100lbdt.html?from=travel",
+      "sourceUrl": "https://travel.qunar.com/p-oi10008198-jiudinglongtan",
       "license": "网络示例图",
-      "author": "来源：新浪旅行实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     },
     {
       "label": "屋檐与雪山同框",
       "src": "./assets/media/shuhe-day1-3.jpg",
-      "sourceUrl": "https://k.sina.cn/article_6043213407_168341e5f00100lbdt.html?from=travel",
+      "sourceUrl": "https://k.sina.com.cn/article_2210496261_83c17f0501900rosz.html",
       "license": "网络示例图",
-      "author": "来源：新浪旅行实拍"
+      "author": "来源：新浪旅行帖子"
     }
   ],
   "lijiang-oldtown-day1": [
     {
       "label": "狮子山俯瞰古城屋顶",
       "src": "./assets/media/lijiang-oldtown-day1-1.jpg",
-      "sourceUrl": "https://gs.ctrip.com/html5/you/sight/lijiang32/3056.html",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/10157359346",
       "license": "网络示例图",
-      "author": "来源：携程景点实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     },
     {
-      "label": "大研花巷观景台",
+      "label": "大研花巷观景台与远山",
       "src": "./assets/media/lijiang-oldtown-day1-2.jpg",
       "sourceUrl": "https://gs.ctrip.com/html5/you/sight/lijiang32/3056.html",
       "license": "网络示例图",
       "author": "来源：携程景点实拍"
     },
     {
-      "label": "入夜后的小桥流水",
+      "label": "大石桥与水巷",
       "src": "./assets/media/lijiang-oldtown-day1-3.jpg",
-      "sourceUrl": "https://gs.ctrip.com/html5/you/sight/lijiang32/3056.html",
+      "sourceUrl": "https://travel.qunar.com/p-oi5475574-dashiqiao",
       "license": "网络示例图",
-      "author": "来源：携程景点实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     }
   ],
   "ama-ribs": [
     {
-      "label": "腊排骨铜锅热气",
+      "label": "腊排骨成菜近景",
       "src": "./assets/media/ama-ribs-1.jpg",
       "sourceUrl": "https://www.dianping.com/shop/H5NVRUthi3iXoWQy/photos",
       "license": "网络示例图",
       "author": "来源：大众点评餐厅实拍"
     },
     {
-      "label": "当地蘸水",
+      "label": "铜锅腊排骨上桌",
       "src": "./assets/media/ama-ribs-2.webp",
       "sourceUrl": "https://www.dianping.com/shop/H5NVRUthi3iXoWQy/photos",
       "license": "网络示例图",
       "author": "来源：大众点评餐厅实拍"
     },
     {
-      "label": "南门夜景",
+      "label": "南门店铺夜景",
       "src": "./assets/media/ama-ribs-3.jpg",
       "sourceUrl": "https://www.dianping.com/shop/H5NVRUthi3iXoWQy/photos",
       "license": "网络示例图",
@@ -117,25 +117,25 @@ window.SPOT_MEDIA = {
   ],
   "blue-moon": [
     {
-      "label": "玉液湖层叠水面",
+      "label": "蓝月湖碧水与远山",
       "src": "./assets/media/blue-moon-1.webp",
       "sourceUrl": "https://jp.trip.com/travel-guide/attraction/yulong/blue-moon-valley-91410/",
       "license": "网络示例图",
       "author": "来源：Trip.com 蓝月谷实拍"
     },
     {
-      "label": "雪山与蓝色湖水同框",
+      "label": "瀑布与玉龙雪山同框",
       "src": "./assets/media/blue-moon-2.webp",
       "sourceUrl": "https://jp.trip.com/travel-guide/attraction/yulong/blue-moon-valley-91410/",
       "license": "网络示例图",
       "author": "来源：Trip.com 蓝月谷实拍"
     },
     {
-      "label": "白水台阶",
-      "src": "./assets/media/blue-moon-3.webp",
-      "sourceUrl": "https://jp.trip.com/travel-guide/attraction/yulong/blue-moon-valley-91410/",
+      "label": "临水木桥与雪山",
+      "src": "./assets/media/blue-moon-3.jpg",
+      "sourceUrl": "https://k.sina.cn/article_2930393003_paeaa3fab027006ps7.html",
       "license": "网络示例图",
-      "author": "来源：Trip.com 蓝月谷实拍"
+      "author": "来源：新浪旅行帖子"
     }
   ],
   "yunxueli-mufu": [
@@ -170,7 +170,7 @@ window.SPOT_MEDIA = {
       "author": "来源：Trip.com 忠义市场实拍"
     },
     {
-      "label": "古城南线亮灯后的水巷",
+      "label": "忠义市场与雪山背景",
       "src": "./assets/media/zhongyi-market-2.webp",
       "sourceUrl": "https://www.trip.com/travel-guide/attraction/lijiang/ancient-city-zhongyi-market-10523034/",
       "license": "网络示例图",
@@ -186,37 +186,37 @@ window.SPOT_MEDIA = {
       "author": "来源：携程白沙古镇实拍"
     },
     {
-      "label": "白沙牌坊",
+      "label": "纳西屋檐与雪山同框",
       "src": "./assets/media/baisha-2.jpg",
       "sourceUrl": "https://gs.ctrip.com/html5/you/sight/yulong1446279/17965.html",
       "license": "网络示例图",
       "author": "来源：携程白沙古镇实拍"
     },
     {
-      "label": "临街咖啡店二楼窗口",
-      "src": "./assets/media/baisha-3.jpg",
-      "sourceUrl": "https://gs.ctrip.com/html5/you/sight/yulong1446279/17965.html",
+      "label": "二楼咖啡窗口与雪山",
+      "src": "./assets/media/baisha-day3-3.jpg",
+      "sourceUrl": "http://k.sina.com.cn/article_6610737712_18a07da3000100qcag.html",
       "license": "网络示例图",
-      "author": "来源：携程白沙古镇实拍"
+      "author": "来源：新浪旅行帖子"
     }
   ],
   "baisha-local-lunch": [
     {
-      "label": "铁板热鸡豆凉粉",
+      "label": "鸡豆凉粉拌料近景",
       "src": "./assets/media/baisha-local-lunch-1.jpg",
-      "sourceUrl": "https://www.yndaily.com/html/2024/yunxinwen_0711/126801.html",
+      "sourceUrl": "https://k.sina.cn/article_2189824074_8286104a00100pt61.html?from=food",
       "license": "网络示例图",
-      "author": "来源：云南日报地方小吃实拍"
+      "author": "来源：新浪美食帖子"
     },
     {
       "label": "现烤丽江粑粑",
       "src": "./assets/media/baisha-local-lunch-2.jpg",
-      "sourceUrl": "https://www.yndaily.com/html/2024/yunxinwen_0711/126801.html",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/10074674853",
       "license": "网络示例图",
-      "author": "来源：云南日报地方小吃实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     },
     {
-      "label": "白沙街边红心洋芋",
+      "label": "白沙街边小吃铺",
       "src": "./assets/media/baisha-local-lunch-3.jpg",
       "sourceUrl": "https://www.yndaily.com/html/2024/yunxinwen_0711/126801.html",
       "license": "网络示例图",
@@ -227,19 +227,19 @@ window.SPOT_MEDIA = {
     {
       "label": "白族酸辣鱼",
       "src": "./assets/media/shiweiyuan-dali-1.jpg",
-      "sourceUrl": "https://tw.trip.com/restaurant/china/dali/detail/restaurant-121123311",
+      "sourceUrl": "https://foodnwine.ifeng.com/c/7mIr5RlbvF2",
       "license": "网络示例图",
-      "author": "来源：Trip.com 餐厅实拍"
+      "author": "来源：凤凰网云南美食实拍"
     },
     {
       "label": "薄荷炸排骨",
       "src": "./assets/media/shiweiyuan-dali-2.jpg",
-      "sourceUrl": "https://tw.trip.com/restaurant/china/dali/detail/restaurant-121123311",
+      "sourceUrl": "https://www.xiachufang.com/recipe/104711326/",
       "license": "网络示例图",
-      "author": "来源：Trip.com 餐厅实拍"
+      "author": "来源：下厨房用户实拍"
     },
     {
-      "label": "白族庭院用餐空间",
+      "label": "白族庭院餐厅入口",
       "src": "./assets/media/shiweiyuan-dali-3.jpg",
       "sourceUrl": "https://tw.trip.com/restaurant/china/dali/detail/restaurant-121123311",
       "license": "网络示例图",
@@ -271,11 +271,11 @@ window.SPOT_MEDIA = {
   ],
   "longkan": [
     {
-      "label": "水杉与红嘴鸥（冬季）",
-      "src": "./assets/media/longkan-1.webp",
-      "sourceUrl": "https://www.sohu.com/a/976074300_120815119",
+      "label": "洱海水岸步道",
+      "src": "./assets/media/longkan-1.jpg",
+      "sourceUrl": "https://k.sina.com.cn/article_1464920000_5750e7c0001012wt2.html",
       "license": "网络示例图",
-      "author": "来源：搜狐龙龛码头实拍"
+      "author": "来源：新浪旅行帖子"
     },
     {
       "label": "伸向洱海的石板路",
@@ -285,11 +285,11 @@ window.SPOT_MEDIA = {
       "author": "来源：搜狐龙龛码头实拍"
     },
     {
-      "label": "日出倒影",
-      "src": "./assets/media/longkan-3.webp",
-      "sourceUrl": "https://www.sohu.com/a/976074300_120815119",
+      "label": "水中水杉林远景",
+      "src": "./assets/media/longkan-3.jpg",
+      "sourceUrl": "https://k.sina.cn/article_2191581955_p82a0e30302700vkl9.html?mod=r&r=0",
       "license": "网络示例图",
-      "author": "来源：搜狐龙龛码头实拍"
+      "author": "来源：新浪旅行帖子"
     }
   ],
   "langqiao": [
@@ -308,11 +308,11 @@ window.SPOT_MEDIA = {
       "author": "来源：Trip.com 廊桥实拍"
     },
     {
-      "label": "草地与苍山洱海同框",
+      "label": "苍山、白族村落与洱海同框",
       "src": "./assets/media/langqiao-3.jpg",
-      "sourceUrl": "https://www.trip.com/moments/detail/dali-1445616-129615026/",
+      "sourceUrl": "https://k.sina.com.cn/article_2704465265_a132dd7100101cv30.html",
       "license": "网络示例图",
-      "author": "来源：Trip.com 廊桥实拍"
+      "author": "来源：新浪旅行帖子"
     }
   ],
   "yiwan-xizhou": [
@@ -324,38 +324,38 @@ window.SPOT_MEDIA = {
       "author": "来源：携程餐厅实拍"
     },
     {
-      "label": "玫瑰乳扇卷",
-      "src": "./assets/media/yiwan-xizhou-1.jpg",
-      "sourceUrl": "https://you.ctrip.com/food/dalicity1445616/149573519.html",
+      "label": "乳扇卷",
+      "src": "./assets/media/yiwan-xizhou-2.jpg",
+      "sourceUrl": "https://k.sina.cn/article_6421292025_17ebd23f9001003jxf.html",
       "license": "网络示例图",
-      "author": "来源：携程餐厅实拍"
+      "author": "来源：新浪美食帖子"
     },
     {
-      "label": "喜洲田园与白族院落",
+      "label": "喜洲牌坊与白族屋顶",
       "src": "./assets/media/yiwan-xizhou-3.jpg",
-      "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_22351175",
+      "sourceUrl": "https://k.sina.com.cn/article_1900967781_714e776501900uz3b.html",
       "license": "网络示例图",
-      "author": "来源：澎湃新闻喜洲实拍"
+      "author": "来源：新浪喜洲报道"
     }
   ],
   "xizhou": [
     {
-      "label": "转角楼经典机位",
+      "label": "稻田与苍山",
       "src": "./assets/media/xizhou-1.jpg",
       "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_22351175",
       "license": "网络示例图",
       "author": "来源：澎湃新闻喜洲实拍"
     },
     {
-      "label": "麦田 / 稻田与苍山",
+      "label": "白族院墙与稻田",
       "src": "./assets/media/xizhou-2.jpg",
       "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_22351175",
       "license": "网络示例图",
       "author": "来源：澎湃新闻喜洲实拍"
     },
     {
-      "label": "白族院落照壁",
-      "src": "./assets/media/yiwan-xizhou-3.jpg",
+      "label": "转角楼经典机位",
+      "src": "./assets/media/xizhou-3.jpg",
       "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_22351175",
       "license": "网络示例图",
       "author": "来源：澎湃新闻喜洲实拍"
@@ -409,7 +409,7 @@ window.SPOT_MEDIA = {
   ],
   "three-pagodas": [
     {
-      "label": "三塔与苍山同框",
+      "label": "三塔水中倒影近景",
       "src": "./assets/media/three-pagodas-1.jpg",
       "sourceUrl": "https://www.sohu.com/a/445381428_120793975",
       "license": "网络示例图",
@@ -418,58 +418,58 @@ window.SPOT_MEDIA = {
     {
       "label": "倒影公园水面",
       "src": "./assets/media/three-pagodas-2.jpg",
-      "sourceUrl": "https://www.sohu.com/a/445381428_120793975",
+      "sourceUrl": "https://k.sina.com.cn/article_7202535141_1ad4df6e500100m7f4.html",
       "license": "网络示例图",
-      "author": "来源：搜狐崇圣寺三塔实拍"
+      "author": "来源：新浪旅行帖子"
     },
     {
-      "label": "北侧田野远景",
-      "src": "./assets/media/three-pagodas-1.jpg",
-      "sourceUrl": "https://www.sohu.com/a/445381428_120793975",
+      "label": "三塔与远山全景",
+      "src": "./assets/media/three-pagodas-3.jpg",
+      "sourceUrl": "http://travel.qunar.com/p-oi703869-chongshengsisantawenhua",
       "license": "网络示例图",
-      "author": "来源：搜狐崇圣寺三塔实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     }
   ],
   "dali-oldtown-day5": [
     {
-      "label": "南门城楼俯瞰屋顶",
-      "src": "./assets/media/dali-oldtown-night-1.webp",
-      "sourceUrl": "https://www.sohu.com/a/907196115_120125395",
+      "label": "南门城墙与古城屋顶",
+      "src": "./assets/media/dali-oldtown-day5-1.jpg",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/10157079799",
       "license": "网络示例图",
-      "author": "来源：搜狐大理古城实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     },
     {
       "label": "五华楼下街景",
-      "src": "./assets/media/dali-oldtown-night-2.webp",
-      "sourceUrl": "https://www.sohu.com/a/907196115_120125395",
+      "src": "./assets/media/dali-oldtown-day5-2.jpg",
+      "sourceUrl": "https://travel.qunar.com/p-oi5851463-wuhualou",
       "license": "网络示例图",
-      "author": "来源：搜狐大理古城实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     },
     {
-      "label": "人民路转角咖啡店",
-      "src": "./assets/media/dali-oldtown-night-3.webp",
-      "sourceUrl": "https://www.sohu.com/a/907196115_120125395",
+      "label": "人民路咖啡店二楼景观位",
+      "src": "./assets/media/dali-oldtown-day5-3.jpg",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/7372334",
       "license": "网络示例图",
-      "author": "来源：搜狐大理古城实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     }
   ],
   "zaihuishou-noodles": [
     {
-      "label": "酸甜辣凉鸡米线",
+      "label": "人民路老店门面",
       "src": "./assets/media/zaihuishou-noodles-1.jpg",
       "sourceUrl": "https://www.sohu.com/a/201024506_404165",
       "license": "网络示例图",
       "author": "来源：搜狐餐厅实拍"
     },
     {
-      "label": "鸡肉与本地调料",
+      "label": "老店简朴座位",
       "src": "./assets/media/zaihuishou-noodles-2.jpg",
       "sourceUrl": "https://www.sohu.com/a/201024506_404165",
       "license": "网络示例图",
       "author": "来源：搜狐餐厅实拍"
     },
     {
-      "label": "人民路老店门面",
+      "label": "酸甜辣凉鸡米线",
       "src": "./assets/media/zaihuishou-noodles-3.jpg",
       "sourceUrl": "https://www.sohu.com/a/201024506_404165",
       "license": "网络示例图",
@@ -485,41 +485,41 @@ window.SPOT_MEDIA = {
       "author": "来源：云南网篆新市场实拍"
     },
     {
-      "label": "云南特色瓜果与鲜花蔬菜",
-      "src": "./assets/media/zhuanxin-market-2.png",
-      "sourceUrl": "https://minzu.yunnan.cn/system/2021/06/11/031508195.shtml",
+      "label": "云南瓜果与鲜花蔬菜",
+      "src": "./assets/media/zhuanxin-market-2.jpg",
+      "sourceUrl": "https://k.sina.cn/article_3314572264_pc5905be802700neqb.html?from=travel",
       "license": "网络示例图",
-      "author": "来源：云南网篆新市场实拍"
+      "author": "来源：新浪旅行帖子"
     },
     {
-      "label": "烤乳扇和甜白酒摊位",
-      "src": "./assets/media/zhuanxin-market-3.png",
-      "sourceUrl": "https://minzu.yunnan.cn/system/2021/06/11/031508195.shtml",
+      "label": "烤乳扇摊位",
+      "src": "./assets/media/zhuanxin-market-3.jpg",
+      "sourceUrl": "https://k.sina.cn/article_7070811276_p1a574048c00100yjqx.html",
       "license": "网络示例图",
-      "author": "来源：云南网篆新市场实拍"
+      "author": "来源：新浪美食帖子"
     }
   ],
   "juncai-hotpot": [
     {
       "label": "当季鲜菌拼盘",
       "src": "./assets/media/juncai-hotpot-1.jpg",
-      "sourceUrl": "https://www.dianping.com/shop/laTkLFM08kFkvgvD/photos",
+      "sourceUrl": "https://k.sina.com.cn/article_6941172754_19db9e41200101c2dn.html",
       "license": "网络示例图",
-      "author": "来源：大众点评餐厅实拍"
+      "author": "来源：新浪云南美食帖子"
     },
     {
-      "label": "金色菌汤",
+      "label": "鲜菌下锅与金色菌汤",
       "src": "./assets/media/juncai-hotpot-2.jpg",
-      "sourceUrl": "https://www.dianping.com/shop/laTkLFM08kFkvgvD/photos",
+      "sourceUrl": "https://sc.sina.cn/life/news/2024-07-02/detail-incatrii7693960.d.html",
       "license": "网络示例图",
-      "author": "来源：大众点评餐厅实拍"
+      "author": "来源：手机新浪网菌彩门店实拍"
     },
     {
       "label": "牛肝菌焖饭",
       "src": "./assets/media/juncai-hotpot-3.jpg",
-      "sourceUrl": "https://www.dianping.com/shop/laTkLFM08kFkvgvD/photos",
+      "sourceUrl": "https://www.nipic.com/show/49379739.html",
       "license": "网络示例图",
-      "author": "来源：大众点评餐厅实拍"
+      "author": "来源：昵图网菜品摄影示例"
     }
   ],
   "kunming-night": [
@@ -549,9 +549,9 @@ window.SPOT_MEDIA = {
     {
       "label": "过桥米线配菜仪式",
       "src": "./assets/media/jianxinyuan-noodles-1.jpg",
-      "sourceUrl": "https://gs.ctrip.com/html5/you/foods/fooddetail/29/15941289.html",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/10101408626",
       "license": "网络示例图",
-      "author": "来源：携程建新园实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     },
     {
       "label": "百年老字号门店",
@@ -561,11 +561,11 @@ window.SPOT_MEDIA = {
       "author": "来源：携程建新园实拍"
     },
     {
-      "label": "昆明甜酱油凉米线",
+      "label": "米线入口近景",
       "src": "./assets/media/jianxinyuan-noodles-3.jpg",
-      "sourceUrl": "https://gs.ctrip.com/html5/you/foods/fooddetail/29/15941289.html",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/10156280430",
       "license": "网络示例图",
-      "author": "来源：携程建新园实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     }
   ],
   "green-lake": [
@@ -577,7 +577,7 @@ window.SPOT_MEDIA = {
       "author": "来源：昆明信息港翠湖实拍"
     },
     {
-      "label": "林荫步道",
+      "label": "翠湖花坛与主题装置",
       "src": "./assets/media/green-lake-2.jpg",
       "sourceUrl": "https://www.kunming.cn/news/c/2024-07-09/13854428.shtml",
       "license": "网络示例图",
@@ -585,22 +585,22 @@ window.SPOT_MEDIA = {
     },
     {
       "label": "讲武堂黄色建筑外景",
-      "src": "./assets/media/green-lake-1.jpg",
-      "sourceUrl": "https://www.kunming.cn/news/c/2024-07-09/13854428.shtml",
+      "src": "./assets/media/green-lake-3.jpg",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/10158372447",
       "license": "网络示例图",
-      "author": "来源：昆明信息港翠湖实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     }
   ],
   "fuzhaolou-lunch": [
     {
       "label": "紫陶汽锅鸡",
       "src": "./assets/media/fuzhaolou-lunch-1.jpg",
-      "sourceUrl": "https://tw.trip.com/restaurant/china/kunming/detail/fuzhaolouqiguo-chicken-restaurant-205519/",
+      "sourceUrl": "https://touch.travel.qunar.com/comment/10157540890",
       "license": "网络示例图",
-      "author": "来源：Trip.com 福照楼实拍"
+      "author": "来源：去哪儿攻略用户实拍"
     },
     {
-      "label": "胜利堂历史建筑外景",
+      "label": "胜利堂入口与历史店招",
       "src": "./assets/media/fuzhaolou-lunch-2.jpg",
       "sourceUrl": "https://tw.trip.com/restaurant/china/kunming/detail/fuzhaolouqiguo-chicken-restaurant-205519/",
       "license": "网络示例图",
@@ -617,13 +617,13 @@ window.SPOT_MEDIA = {
   "dounan-flower-market": [
     {
       "label": "成片鲜切花摊位",
-      "src": "./assets/media/dounan-flower-market-1.png",
-      "sourceUrl": "https://www.dounanflowers.com/archives/599",
+      "src": "./assets/media/dounan-flower-market-1.jpg",
+      "sourceUrl": "https://cj.sina.com.cn/articles/view/2090512390/7c9ab00602001gln7",
       "license": "网络示例图",
-      "author": "来源：斗南花卉产业集团实拍"
+      "author": "来源：新浪财经斗南花市实拍"
     },
     {
-      "label": "云南特色玫瑰与绣球",
+      "label": "鲜切花批发摊位俯瞰",
       "src": "./assets/media/dounan-flower-market-2.jpg",
       "sourceUrl": "https://www.dounanflowers.com/archives/599",
       "license": "网络示例图",

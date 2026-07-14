@@ -5,7 +5,11 @@
     "sourceUrl": "https://us.trip.com/restaurant/china/lijiang/detail/restaurant-18599670",
     "images": [
       "https://ak-d.tripcdn.com/images/10010l000000cwb7t60BB_C_240_240_R5.jpg?proc=source%2Ftrip",
-      "https://ak-d.tripcdn.com/images/10010l000000cwb7t60BB_C_240_240_R5.jpg?proc=source%2Ftrip",
+      {
+        "url": "https://youimg1.c-ctrip.com/target/fd/tg/g4/M04/CC/B0/CggYHVX8NA2AHphnAAHJPgBWZFQ384.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/10058358075"
+      },
       "https://ak-d.tripcdn.com/images/100r0l000000cljfgFDF2_C_240_240_R5.jpg?proc=source%2Ftrip"
     ]
   },
@@ -15,8 +19,16 @@
     "sourceUrl": "https://k.sina.cn/article_6043213407_168341e5f00100lbdt.html?from=travel",
     "images": [
       "https://k.sinaimg.cn/n/sinacn20190812ac/356/w700h456/20190812/266c-icapxph4363408.jpg/w700d1q75cms.jpg",
-      "https://k.sinaimg.cn/n/sinacn20190812ac/360/w700h460/20190812/2f32-icapxph4363409.jpg/w700d1q75cms.jpg",
-      "https://k.sinaimg.cn/n/sinacn20190812ac/356/w700h456/20190812/75cb-icapxph4363420.jpg/w700d1q75cms.jpg"
+      {
+        "url": "https://youimg1.c-ctrip.com/target/100w0t000000iqx5aD6B6.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://travel.qunar.com/p-oi10008198-jiudinglongtan"
+      },
+      {
+        "url": "https://n.sinaimg.cn/sinakd20200514s/552/w1080h1072/20200514/60cf-itriatr7818364.jpg",
+        "sourceName": "新浪旅行帖子",
+        "sourceUrl": "https://k.sina.com.cn/article_2210496261_83c17f0501900rosz.html"
+      }
     ]
   },
   {
@@ -24,9 +36,17 @@
     "sourceName": "携程景点实拍",
     "sourceUrl": "https://gs.ctrip.com/html5/you/sight/lijiang32/3056.html",
     "images": [
-      "https://dimg04.c-ctrip.com/images/0100j12000g2oj728A7F4_W_750_0.jpg?proc=autoorient",
+      {
+        "url": "https://youimg1.c-ctrip.com/target/10050z000000ml37g4C0A.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/10157359346"
+      },
       "https://dimg04.c-ctrip.com/images/100f12000000rz2qm851C_W_750_0.jpg?proc=autoorient",
-      "https://dimg04.c-ctrip.com/images/0100g120008c4m8hw1A0C_W_750_0.jpg?proc=autoorient"
+      {
+        "url": "https://youimg1.c-ctrip.com/target/100o1b000001azvld26D8.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://travel.qunar.com/p-oi5475574-dashiqiao"
+      }
     ]
   },
   {
@@ -56,7 +76,11 @@
     "images": [
       "https://ak-d.tripcdn.com/images/0102u1200087dl1bw91F0_W_960_0_R5_Q60.webp?proc=source%2Ftrip",
       "https://ak-d.tripcdn.com/images/010141200087e6llgB406_W_960_0_R5_Q60.webp?proc=source%2Ftrip",
-      "https://ak-d.tripcdn.com/images/0100o12000g2olofmBD2C_W_960_0_R5_Q60.webp?proc=source%2Ftrip"
+      {
+        "url": "https://k.sinaimg.cn/n/sinacn11/218/w1658h960/20180514/9c67-hapkuvk3368859.jpg/w700d1q75cms.jpg",
+        "sourceName": "新浪旅行帖子",
+        "sourceUrl": "https://k.sina.cn/article_2930393003_paeaa3fab027006ps7.html"
+      }
     ]
   },
   {
@@ -86,7 +110,11 @@
     "images": [
       "https://dimg04.c-ctrip.com/images/01A2g120008ry6iq57E51_W_750_0.jpg?proc=autoorient",
       "https://dimg04.c-ctrip.com/images/0101a12000nq00ipn47B4_W_750_0.jpg?proc=autoorient",
-      "https://dimg04.c-ctrip.com/images/0102712000mjdjwt10741_W_750_0.jpg?proc=autoorient"
+      {
+        "url": "https://n.sinaimg.cn/sinakd20210218ac/224/w640h384/20210218/2467-kkciesr3173122.jpg",
+        "sourceName": "新浪旅行帖子",
+        "sourceUrl": "http://k.sina.com.cn/article_6610737712_18a07da3000100qcag.html"
+      }
     ]
   },
   {
@@ -94,8 +122,16 @@
     "sourceName": "云南日报地方小吃实拍",
     "sourceUrl": "https://www.yndaily.com/html/2024/yunxinwen_0711/126801.html",
     "images": [
-      "https://img-cdn.yndaily.com/fz/YXWAPP/2024-07/11/38065926-8f61-42c8-a5da-ab7596d10184.jpeg?x-image-process=image%2Fquality%2Cq_95",
-      "https://img-cdn.yndaily.com/fz/YXWAPP/2024-07/11/ab798615-a403-4dfd-adca-7489bc20608a.jpeg?x-image-process=image%2Fquality%2Cq_95",
+      {
+        "url": "https://k.sinaimg.cn/n/sinakd20200831ac/466/w760h506/20200831/9eb1-iypetiv0609373.png/w700d1q75cms.jpg",
+        "sourceName": "新浪美食帖子",
+        "sourceUrl": "https://k.sina.cn/article_2189824074_8286104a00100pt61.html?from=food"
+      },
+      {
+        "url": "https://youimg1.c-ctrip.com/target/100f050000000o5u0E102.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/10074674853"
+      },
       "https://img-cdn.yndaily.com/fz/YXWAPP/2024-07/11/b46f3f13-89f4-467a-9edc-5d04b7b7d930.jpeg?x-image-process=image%2Fquality%2Cq_95"
     ]
   },
@@ -104,8 +140,16 @@
     "sourceName": "Trip.com 餐厅实拍",
     "sourceUrl": "https://tw.trip.com/restaurant/china/dali/detail/restaurant-121123311",
     "images": [
-      "https://ak-d.tripcdn.com/images/1mh1b12000gi8yskp4D72_C_340_230_R5.jpg?proc=source%2Ftrip",
-      "https://ak-d.tripcdn.com/images/1mh1p12000gi9ka5q8946_C_340_230_R5.jpg?proc=source%2Ftrip",
+      {
+        "url": "https://d.ifengimg.com/q100/img1.ugc.ifeng.com/newugc/20190501/10/wemedia/9855487659439a4dbab9f02dc5549cb1daa18f96_size1649_w906_h603.png",
+        "sourceName": "凤凰网云南美食实拍",
+        "sourceUrl": "https://foodnwine.ifeng.com/c/7mIr5RlbvF2"
+      },
+      {
+        "url": "https://i2.chuimg.com/c7197f0f95ee4c0ab50a85f74131a9cd_6720w_4480h.jpg?imageView2/2/w/660/interlace/1/q/90",
+        "sourceName": "下厨房用户实拍",
+        "sourceUrl": "https://www.xiachufang.com/recipe/104711326/"
+      },
       "https://ak-d.tripcdn.com/images/1mh1212000gi92c7i7258_C_340_230_R5.jpg?proc=source%2Ftrip"
     ]
   },
@@ -124,9 +168,17 @@
     "sourceName": "搜狐龙龛码头实拍",
     "sourceUrl": "https://www.sohu.com/a/976074300_120815119",
     "images": [
-      "https://q0.itc.cn/q_70/images03/20260114/03060c930ef64c1eb2358734ffcc3b58.jpeg",
+      {
+        "url": "https://n.sinaimg.cn/sinakd10023/717/w910h607/20220319/0978-63c219c782e56aca2661dca0407aeb7a.jpg",
+        "sourceName": "新浪旅行帖子",
+        "sourceUrl": "https://k.sina.com.cn/article_1464920000_5750e7c0001012wt2.html"
+      },
       "https://q3.itc.cn/q_70/images03/20260114/049d6bf9cbd24549b56acfcb7a411fb7.jpeg",
-      "https://q0.itc.cn/q_70/images03/20260114/b7e31e9a2c0b45cc88157b0c5008b62f.jpeg"
+      {
+        "url": "https://k.sinaimg.cn/n/sinakd20122/299/w1619h1080/20210113/a8b7-khstaxr7500979.jpg/w700d1q75cms.jpg",
+        "sourceName": "新浪旅行帖子",
+        "sourceUrl": "https://k.sina.cn/article_2191581955_p82a0e30302700vkl9.html?mod=r&r=0"
+      }
     ]
   },
   {
@@ -136,7 +188,11 @@
     "images": [
       "https://ak-d.tripcdn.com/images/1mi6j224x8zl4aswqD315_W_640_0_R5_Q80.jpg?proc=source%2Ftrip",
       "https://ak-d.tripcdn.com/images/1mi31224x8zl4ikp1F0A8_W_640_0_R5_Q80.jpg?proc=source%2Ftrip",
-      "https://ak-d.tripcdn.com/images/1mi69224x8zl4k73zFD67_W_640_0_R5_Q80.jpg?proc=source%2Ftrip"
+      {
+        "url": "https://k.sinaimg.cn/n/sinakd20108/799/w1024h575/20251009/9426-90622dc795897f5c43de47c1a44a241e.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+        "sourceName": "新浪旅行帖子",
+        "sourceUrl": "https://k.sina.com.cn/article_2704465265_a132dd7100101cv30.html"
+      }
     ]
   },
   {
@@ -145,11 +201,15 @@
     "sourceUrl": "https://you.ctrip.com/food/dalicity1445616/149573519.html",
     "images": [
       "https://dimg04.c-ctrip.com/images/1me3x12000gmjd1960D19.jpg",
-      "https://dimg04.c-ctrip.com/images/1me3x12000gmjd1960D19.jpg",
       {
-        "url": "https://imagepphcloud.thepaper.cn/pph/image/243/359/687.jpg",
-        "sourceName": "澎湃新闻喜洲实拍",
-        "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_22351175"
+        "url": "https://n.sinaimg.cn/sinacn/w640h365/20180224/4c9d-fyrswmv4163416.jpg",
+        "sourceName": "新浪美食帖子",
+        "sourceUrl": "https://k.sina.cn/article_6421292025_17ebd23f9001003jxf.html"
+      },
+      {
+        "url": "https://n.sinaimg.cn/sinakd20201028s/290/w1080h810/20201028/c2d4-kcaeqzx8311353.jpg",
+        "sourceName": "新浪喜洲报道",
+        "sourceUrl": "https://k.sina.com.cn/article_1900967781_714e776501900uz3b.html"
       }
     ]
   },
@@ -201,7 +261,16 @@
     "sourceUrl": "https://www.sohu.com/a/445381428_120793975",
     "images": [
       "https://p3.itc.cn/images01/20210119/92781b61cdb54387a8bf141ac1c7faaf.jpeg",
-      "https://p0.itc.cn/images01/20210119/0a46068bfef248649708799ef0228f8e.jpeg"
+      {
+        "url": "https://n.sinaimg.cn/sinacn10111/78/w1920h1358/20191006/60b6-ifmectm7446812.jpg",
+        "sourceName": "新浪旅行帖子",
+        "sourceUrl": "https://k.sina.com.cn/article_7202535141_1ad4df6e500100m7f4.html"
+      },
+      {
+        "url": "https://youimg1.c-ctrip.com/target/0106s120005rxsiv376FE_D_10000_1200.jpg?proc=autoorient",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "http://travel.qunar.com/p-oi703869-chongshengsisantawenhua"
+      }
     ]
   },
   {
@@ -209,9 +278,21 @@
     "sourceName": "搜狐大理古城实拍",
     "sourceUrl": "https://www.sohu.com/a/907196115_120125395",
     "images": [
-      "https://q2.itc.cn/q_70/images03/20250624/8de7af31694b4e499ed136f92cc51a06.jpeg",
-      "https://q3.itc.cn/q_70/images03/20250624/b171e05740354f45b1d633e133291b19.jpeg",
-      "https://q3.itc.cn/q_70/images03/20250624/a7e87838737e45ada60fe72261cb1538.jpeg"
+      {
+        "url": "https://youimg1.c-ctrip.com/target/100g0x000000lg1p6D7F3.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/10157079799"
+      },
+      {
+        "url": "https://youimg1.c-ctrip.com/target/100p1f000001gpevjD0BB_W_10000_1200.jpg?proc=autoorient",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://travel.qunar.com/p-oi5851463-wuhualou"
+      },
+      {
+        "url": "https://tr-osdcp.qunarzz.com/tr-osd-tr-space/img/50b1da0e42b82524a2d381fc5991fa73.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/7372334"
+      }
     ]
   },
   {
@@ -230,8 +311,16 @@
     "sourceUrl": "https://minzu.yunnan.cn/system/2021/06/11/031508195.shtml",
     "images": [
       "https://society.yunnan.cn/pic/003/039/181/00303918198_c81c4914.png",
-      "https://society.yunnan.cn/pic/003/039/181/00303918199_ed74786f.png",
-      "https://society.yunnan.cn/pic/003/039/182/00303918200_2fba9fd2.png"
+      {
+        "url": "https://n.sinaimg.cn/sinakd20108/300/w1620h1080/20200405/5f49-irtymmw1517979.jpg",
+        "sourceName": "新浪旅行帖子",
+        "sourceUrl": "https://k.sina.cn/article_3314572264_pc5905be802700neqb.html?from=travel"
+      },
+      {
+        "url": "https://n.sinaimg.cn/sinakd10106/320/w1200h720/20200819/c0b4-ixvrvsp8233306.jpg",
+        "sourceName": "新浪美食帖子",
+        "sourceUrl": "https://k.sina.cn/article_7070811276_p1a574048c00100yjqx.html"
+      }
     ]
   },
   {
@@ -239,9 +328,21 @@
     "sourceName": "大众点评餐厅实拍",
     "sourceUrl": "https://www.dianping.com/shop/laTkLFM08kFkvgvD/photos",
     "images": [
-      "https://qcloud.dpfile.com/pc/yt_E_bR9WvBp8lT2oY-_eFb8YZO-VGzhj9mMy_v3FDO6ael0CeJ2u5J_0LaSHDunl0cm-Lf9tDMlLZpO7rb3bg.jpg",
-      "https://qcloud.dpfile.com/pc/y77xR4xJZ5HgPc7BN79HitL2j4rhrh4I8qiE5PE-WX0fs5IXGgY3_0Ra336ek-X9l0cm-Lf9tDMlLZpO7rb3bg.jpg",
-      "https://qcloud.dpfile.com/pc/GPHHdI6yWQ2JDhpvahI-cOcJG8GKdO8-ot0hfaSVcUBzl6QxVMk327vmlZRx4QT3l0cm-Lf9tDMlLZpO7rb3bg.jpg"
+      {
+        "url": "https://n.sinaimg.cn/sinakd20200804ac/239/w640h399/20200804/aa81-ixeeisa0484191.jpg",
+        "sourceName": "新浪云南美食帖子",
+        "sourceUrl": "https://k.sina.com.cn/article_6941172754_19db9e41200101c2dn.html"
+      },
+      {
+        "url": "https://n.sinaimg.cn/sc/transform/565/w546h819/20240702/dd2c-d75df871c904a327afc680c5dc81cedb.jpg",
+        "sourceName": "手机新浪网菌彩门店实拍",
+        "sourceUrl": "https://sc.sina.cn/life/news/2024-07-02/detail-incatrii7693960.d.html"
+      },
+      {
+        "url": "https://pic.nximg.cn/file/20241218/14773619_163623810103_2.jpg",
+        "sourceName": "昵图网菜品摄影示例",
+        "sourceUrl": "https://www.nipic.com/show/49379739.html"
+      }
     ]
   },
   {
@@ -259,9 +360,17 @@
     "sourceName": "携程建新园实拍",
     "sourceUrl": "https://gs.ctrip.com/html5/you/foods/fooddetail/29/15941289.html",
     "images": [
-      "https://dimg04.c-ctrip.com/images/1mh4212000h4bhe3p1220_D_180_180.jpg?proc=autoorient",
+      {
+        "url": "https://youimg1.c-ctrip.com/target/10030f0000007g3fu6827.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/10101408626"
+      },
       "https://dimg04.c-ctrip.com/images/1mh6a12000h4bfcgu94CF_D_180_180.jpg?proc=autoorient",
-      "https://dimg04.c-ctrip.com/images/1mh2412000h4bfuloE958_D_180_180.jpg?proc=autoorient"
+      {
+        "url": "https://youimg1.c-ctrip.com/target/10020v000000k62zb7D5C.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/10156280430"
+      }
     ]
   },
   {
@@ -271,7 +380,11 @@
     "images": [
       "https://www.kunming.cn/news/upload/resources/image/2024/07/09/1661548.jpg?r=1720515529722",
       "https://www.kunming.cn/news/upload/resources/image/2024/07/09/1661549.jpg?r=1720515529723",
-      "https://i2.chinanews.com.cn/simg/ypt/2026/260206/b9c329b1-ff67-43c4-a3c2-a191410d7947_zsite.jpg"
+      {
+        "url": "https://youimg1.c-ctrip.com/target/100e13000000u2b9zED02.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/10158372447"
+      }
     ]
   },
   {
@@ -279,7 +392,11 @@
     "sourceName": "Trip.com 福照楼实拍",
     "sourceUrl": "https://tw.trip.com/restaurant/china/kunming/detail/fuzhaolouqiguo-chicken-restaurant-205519/",
     "images": [
-      "https://ak-d.tripcdn.com/images/1mh4g12000s2gdsms4B01_C_340_230_R5.jpg?proc=source%2Ftrip",
+      {
+        "url": "https://youimg1.c-ctrip.com/target/10010z000000oa0n0565F.jpg",
+        "sourceName": "去哪儿攻略用户实拍",
+        "sourceUrl": "https://touch.travel.qunar.com/comment/10157540890"
+      },
       "https://ak-d.tripcdn.com/images/1mh5d12000s2gro1e2450_C_340_230_R5.jpg?proc=source%2Ftrip",
       "https://ak-d.tripcdn.com/images/1mh0p12000s2gtb66A816_C_340_230_R5.jpg?proc=source%2Ftrip"
     ]
@@ -289,7 +406,11 @@
     "sourceName": "斗南花卉产业集团实拍",
     "sourceUrl": "https://www.dounanflowers.com/archives/599",
     "images": [
-      "https://www.dounanflowers.com/wp-content/uploads/2026/01/640-d813eb69.png",
+      {
+        "url": "https://n.sinaimg.cn/sinakd202133s/194/w600h394/20210303/57ee-kkxpczc1782076.png",
+        "sourceName": "新浪财经斗南花市实拍",
+        "sourceUrl": "https://cj.sina.com.cn/articles/view/2090512390/7c9ab00602001gln7"
+      },
       "https://www.dounanflowers.com/wp-content/uploads/2026/01/640-c830a4a9.jpg",
       "https://www.dounanflowers.com/wp-content/uploads/2026/01/640-aeab0d3b.jpg"
     ]

@@ -1,4 +1,4 @@
-const CACHE = "yunnan-trip-shell-v14";
+const CACHE = "yunnan-trip-shell-v15";
 const SHELL = ["./", "./index.html", "./styles.css", "./data.js", "./media.js", "./app.js", "./manifest.json", "./icon.svg"];
 self.addEventListener("install", event => {
   self.skipWaiting();

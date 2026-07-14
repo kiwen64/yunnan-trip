@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "yunnan-trip-v7-transit-media";
+  const STORAGE_KEY = "yunnan-trip-v8-reviewed-media";
   const PACKING_KEY = "yunnan-packing-checked-v1";
   const $ = (selector) => document.querySelector(selector);
   const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -494,8 +494,8 @@
   }
 
   function resetTrip() {
-    if (!confirm("确定恢复示例行程？当前设备上的修改会被覆盖。")) return;
-    trip = clone(window.DEFAULT_TRIP); activeDayIndex = 0; saveTrip("已恢复示例行程"); $("#moreMenu").classList.remove("open");
+    if (!confirm("确定载入最新发布版？当前设备上的修改会被覆盖。")) return;
+    trip = clone(window.DEFAULT_TRIP); activeDayIndex = 0; saveTrip("已载入最新发布版"); $("#moreMenu").classList.remove("open");
   }
 
   async function shareTrip() {
